@@ -72,7 +72,7 @@ export const GuestProvider: React.FC<{ children: React.ReactNode }> = (
             handleDeleteGroup,
             handleDeleteGuest,
         }),
-        [state]
+        [state, handleChangeStatus, handleDeleteGroup, handleDeleteGuest]
     )
     return <GuestContext.Provider value={value} {...props} />
 }
