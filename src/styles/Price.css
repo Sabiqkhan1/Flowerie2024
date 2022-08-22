@@ -1,0 +1,14 @@
+.price-date-range {
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.price-date-range .rdrDefinedRangesWrapper {
+    display: none !important;
+}
+
+.price-date-range .rdrDateRangePickerWrapper {
+    width: 80% !important;
+}
+.price-date-range .rdrCalendarWrapper {
+    width: 100%;
+}

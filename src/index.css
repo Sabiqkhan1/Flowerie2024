@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'regular';
+    src: url(../src//styles/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'light';
+    src: url(../src//styles/fonts/Montserrat-Light.ttf);
+}
+@font-face {
+    font-family: 'medium';
+    src: url(../src/styles/fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: 'semibold';
+    src: url(../src//styles/fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'extrabold';
+    src: url(../src//styles/fonts/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+    font-family: 'mark';
+    src: url(../src/styles/fonts/MarckScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'roboto-regular';
+    src: url(../src/styles/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'roboto-bold';
+    src: url(../src/styles/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'inter-medium';
+    src: url(../src/styles/fonts/Inter-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'bold';
+    src: url(../src/styles/fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'inter-regular';
+    src: url(../src/styles/fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'segoe-regular';
+    src: url(../src/styles/fonts/SEGOEUI.TTF);
+}
+@font-face {
+    font-family: 'inter-bold';
+    src: url(../src/styles/fonts/Inter-Bold.ttf);
+}
+*::after,
+*::before,
+* {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: border-box !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+* button {
+    cursor: pointer;
+}
+
+.white {
+    color: #fff;
+}
+
+.no-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.thin-scroll::-webkit-scrollbar {
+    width: 0.2rem;
+    height: 0.5rem;
+}
+.thin-scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+.thin-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.1);
+    outline: none;
+    border-radius: 25px;
+}
+.calendar-picker {
+    margin: 0 !important;
+}
+.calendar-picker .Mui-selected {
+    background-color: #fb3f4a !important;
+}
+input[type='number'],
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield !important;
+}
