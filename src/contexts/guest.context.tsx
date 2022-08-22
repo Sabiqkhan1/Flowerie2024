@@ -57,14 +57,17 @@ export const GuestProvider: React.FC<{ children: React.ReactNode }> = (
         [guests]
     )
 
-    const handleDeleteGuest = (groupId: number, guestId: React.Key) => {
-        const newGroups = [...guests]
-        newGroups[groupId]['guests'].splice(guestId, 1)
-        dispatch({
-            type: 'SET_GUESTS',
-            payload: newGroups,
-        })
-    }
+    const handleDeleteGuest = useCallback(
+        (groupId: number, guestId: React.Key) => {
+            const newGroups = [...guests]
+            newGroups[groupId]['guests'].splice(guestId, 1)
+            dispatch({
+                type: 'SET_GUESTS',
+                payload: newGroups,
+            })
+        },
+        [guests]
+    )
     const value = useMemo(
         () => ({
             ...state,
