@@ -16,7 +16,7 @@ pipelines:
 
         - step:
               name: Deploy to Firebase
-              deployment: production
+              deployment: Production
               script:
                   - pipe: atlassian/firebase-deploy:2.0.0
                     variables:
