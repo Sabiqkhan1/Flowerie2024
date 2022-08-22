@@ -1,7 +1,18 @@
 image: node:16.14.0
 
 pipelines:
+    branches:
+        '{master}':
+            - step:
+                  script:
+                      - echo "master"
     default:
+        - step:
+              caches:
+                  - node
+              script:
+                  - npm install
+
         - step:
               name: Build
               script:
