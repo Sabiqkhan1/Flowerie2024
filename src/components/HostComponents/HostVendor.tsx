@@ -18,7 +18,7 @@ const HostVendor: React.FC = (): JSX.Element => {
                         </small>
                     </section>
                     <section>
-                        <Link to="vendor-dashboard" className="float-left">
+                        <Link to="/vendor-dashboard" className="float-left">
                             <ContainedButton
                                 background="bg-[#C6A6A6]"
                                 color="black"

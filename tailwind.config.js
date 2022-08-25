@@ -26,6 +26,7 @@ module.exports = {
                 hosthero: 'calc(100vh - 90px)',
                 80: '80%',
             },
+
             backgroundImage: {
                 hero: "url('/src/assets/images/heroBackground.jpeg')",
                 tool: "url('/src/assets/images/background_img2.png')",

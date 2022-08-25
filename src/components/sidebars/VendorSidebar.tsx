@@ -73,7 +73,7 @@ const VendorSidebar = () => {
                 <Collapse in={paymentOpen} timeout="auto" unmountOnExit>
                     <List component="div" disablePadding>
                         {vendorLinks.map((item, index) => (
-                            <CustomLink to={item.to}>
+                            <CustomLink key={index} to={item.to}>
                                 <ListItemButton
                                     sx={{ pl: '34px', py: '4px' }}
                                     key={index}
@@ -130,7 +130,7 @@ const VendorSidebar = () => {
                     }}
                 />
                 {vendorSecondaryLinks.map((item, index) => (
-                    <CustomLink to={item.to}>
+                    <CustomLink key={index} to={item.to}>
                         <ListItemButton
                             sx={{ pl: '34px', py: '4px' }}
                             key={index}
