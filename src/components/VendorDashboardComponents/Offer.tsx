@@ -1,7 +1,6 @@
 import React from 'react'
 import { MdWavingHand } from 'react-icons/md'
 import Divider from '@mui/material/Divider'
-import SidebarButton from '../buttons/SidebarButton'
 import FlatButton from '../buttons/FlatButton'
 const Offer: React.FC = (): JSX.Element => {
     return (
