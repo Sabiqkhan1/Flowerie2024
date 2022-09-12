@@ -61,6 +61,11 @@
     font-family: 'inter-bold';
     src: url(../src/styles/fonts/Inter-Bold.ttf);
 }
+
+@font-face {
+    font-family: 'playfair-regular';
+    src: url(../src/styles/fonts/PlayfairDisplay-Regular.ttf);
+}
 *::after,
 *::before,
 * {

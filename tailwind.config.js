@@ -95,6 +95,7 @@ module.exports = {
                 'inter-regular': ['inter-regular'],
                 'inter-bold': ['inter-bold'],
                 'segoe-regular': ['segoe-regular'],
+                'playfair-regular': ['playfair-regular'],
             },
             maxWidth: {
                 header: '23rem',
