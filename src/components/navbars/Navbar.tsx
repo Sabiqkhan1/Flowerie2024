@@ -55,7 +55,7 @@ const Navbar = (): JSX.Element => {
     const id = dropDownOpen ? 'nav-dropdown' : undefined
     return (
         <nav
-            className="fixed top-0 w-full z-50 px-20 py-6 transition-colors duration-500 ease-in-out md:px-14 sm:px-8 xs:px-4 xs:py-2"
+            className="fixed top-0 w-full z-50 px-20 py-6 transition-colors duration-500 ease-in-out md:px-14 sm:px-8 xs:px-4 xs:py-4"
             id="homeNav"
         >
             <div className="relative flex items-center justify-between">
@@ -69,7 +69,12 @@ const Navbar = (): JSX.Element => {
                 <div className="hidden sm:block">
                     <MenuIcon
                         className="text-white hover:scale-105 focus:scale-105 transition-transform duration-300 cursor-pointer"
-                        sx={{ fontSize: '2rem' }}
+                        sx={{
+                            fontSize: {
+                                sm: '2rem',
+                                xs: '1.5rem',
+                            },
+                        }}
                         onClick={toggle}
                     />
                 </div>
@@ -97,7 +102,7 @@ const Navbar = (): JSX.Element => {
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         transition={{ delay: 0.3 }}
-                        className="block font-medium text-xl white cursor-pointer mr-4 sm:hidden md-text-sm"
+                        className="block font-medium text-xl white cursor-pointer mr-4 sm:hidden md:text-sm"
                     >
                         <Link to="host">Become a vendor</Link>
                     </motion.div>
@@ -116,7 +121,9 @@ const Navbar = (): JSX.Element => {
                             handleClose={handleDropDownClose}
                         />
                         <AccountCircleIcon
-                            sx={{ color: '#C4C4C4', fontSize: 28 }}
+                            sx={{
+                                color: '#C4C4C4',
+                            }}
                         />
                     </div>
                 </div>

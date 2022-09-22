@@ -12,19 +12,20 @@ const Img = styled('img')({
 })
 const Hero = (): JSX.Element => {
     return (
-        <header className="relative w-full aspect-[1512/700]">
-            <div className="absolute top-0 w-full h-full flex flex-col justify-end py-16 px-28 bg-gradient-to-b from-[#c2c2c26e] to-[#000000a1] md:pl-20 sm:pl-16 xs:pl-4">
+        <header className="relative w-full h-[calc(100vh-256px)] sm:h-[calc(100vh-300px)] xs:h-[calc(100vh-384px)]">
+            <div className="absolute top-0 w-full h-full flex flex-col justify-end py-16 px-28 bg-gradient-to-b from-[#c2c2c26e] to-[#000000a1] xs:px-4 sm:px-8 md:px-14 sm:py-4">
                 <section className="flex flex-col ">
                     <motion.h1
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.3 }}
-                        className="text-white font-semibold text-4xl mb-8 max-w-md xs:text-3xl xs:max-w-mobile"
+                        className="text-white font-semibold text-3xl mb-8 md:text-2xl sm:text-xl xs:mb-4"
                     >
                         <span className="text-pink">Book</span> and{' '}
-                        <span className="text-pink">manage</span> your special
-                        occasion in one{' '}
+                        <span className="text-pink">manage</span> your
+                        <br /> special occasion in one
+                        <br />
                         <span className="text-pink">centralised</span> place.
                     </motion.h1>
                     <Link to="search" className="w-max">

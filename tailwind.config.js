@@ -106,10 +106,11 @@ module.exports = {
             },
         },
         screens: {
-            lg: { max: '1920px' },
-            md: { max: '1200px' },
-            sm: { max: '900px' },
-            xs: { max: '600px' },
+            xl: { max: '1920px' },
+            lg: { max: '1280px' },
+            md: { max: '960px' },
+            sm: { max: '600px' },
+            xs: { max: '400px' },
         },
     },
 

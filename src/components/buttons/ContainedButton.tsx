@@ -15,14 +15,13 @@ const ContainedButton: React.FC<ButtonProps> = ({
     children,
     background,
     color,
-    fontSize = 16,
     style,
     fontFamily = 'regular',
 }): JSX.Element => {
     return (
         <button
-            style={{ ...style, fontSize: fontSize }}
-            className={`${background} px-4  py-3  text-${color} font-${fontFamily} sm:text-sm xs:text-xs rounded-xl w-full hover:scale-105 transition-transform duration-300 drop-shadow-lg`}
+            style={{ ...style }}
+            className={`${background} px-4 py-3 text-${color} font-${fontFamily} sm:text-sm xs:text-xs sm:px-3 sm:py-2 rounded-xl w-full hover:scale-105 transition-transform duration-300 drop-shadow-lg sm:rounded-md`}
         >
             {children}
         </button>

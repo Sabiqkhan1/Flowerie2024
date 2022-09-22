@@ -69,6 +69,7 @@ const HomeSearch: React.FC<HomeSearchProps> = ({ scrolled }): JSX.Element => {
                     top: scrolled ? 63 : 58,
                     overflow: 'hidden',
                     borderRadius: 1,
+                    maxWidth: '100vw',
                 }}
             >
                 <div className="bg-white shadow-lg">
@@ -87,7 +88,7 @@ const HomeSearch: React.FC<HomeSearchProps> = ({ scrolled }): JSX.Element => {
                                 <input className="bg-white border border-black/60 rounded-md p-2 w-full focus-visible:outline-none font-roboto-regular text-sm text-black" />
                             </div>
                         </div>
-                        <div className="flex-grow">
+                        <div className="flex-grow max-w-full">
                             <DateRangePicker
                                 moveRangeOnFirstSelection={false}
                                 onChange={(item) => setDate([item.selection])}

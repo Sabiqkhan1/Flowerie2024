@@ -59,3 +59,52 @@
 .search-date-range .rdrDefinedRangesWrapper {
     display: none !important;
 }
+
+@media screen and (max-width: 960px) {
+    .search-form {
+        width: 80vw;
+        max-width: 600px;
+    }
+    .scrolled {
+        transform: translate(-50%, -250%) scale(0.9);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .input-wrapper input {
+        font-size: 14px;
+    }
+    .input-wrapper button {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .scrolled {
+        transform: translate(-50%, -250%) scale(0.75);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .search-form {
+        top: 6rem;
+        width: 90vw;
+        max-width: unset;
+    }
+    .scrolled {
+        width: 256px;
+        transform: translate(-55%, -176%) scale(0.9);
+    }
+    .input-wrapper input {
+        font-size: 12px;
+        padding: 0 4px;
+    }
+
+    .input-wrapper button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .scrolled .input-wrapper button {
+        width: 36px;
+        height: 36px;
+    }
+}

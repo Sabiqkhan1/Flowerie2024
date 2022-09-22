@@ -43,32 +43,35 @@ const Venues: FC = (): JSX.Element => {
                     ))}
                 </Grid>
             </section>
-            <section className="pr-28">
-                <figure className="relative w-full h-[320px] bg-[#e2e2e2] rounded-3xl overflow-auto">
+            <section className="pr-28 md:pr-12 sm:pr-6 xs:pr-2">
+                <figure className="relative w-full h-[320px] bg-[#e2e2e2] rounded-3xl overflow-auto sm:h-[200px]">
                     <div className="absolute top-0 w-full h-full">
-                        <div className="w-1/2 h-full bg-gradient-to-b from-[rgba(0,0,0,0.41)] float-right px-4 pb-4">
+                        <div className="w-1/2 h-full bg-gradient-to-b from-[rgba(0,0,0,0.41)] float-right px-4 pb-4 sm:w-full sm:bg-gradient-to-t sm:from-[rgba(256,256,256,0.20)]">
                             <div className="h-full flex flex-col justify-between pt-4">
                                 <div>
                                     <section className="flex items-center">
                                         <img
                                             src={Logo}
                                             alt="logo"
-                                            className="w-12 h-12 sm:w-12 xs:w-8 sm:h-12 xs:h-8"
+                                            className="w-12 h-12 sm:w-8 xs:w-8 sm:h-8 xs:h-8"
                                         />
-                                        <h3 className="ml-1 text-3xl text-light-maroon font-semibold">
+                                        <h3 className="ml-1 text-3xl text-light-maroon font-semibold sm:text-xl">
                                             Flowerie
                                         </h3>
                                     </section>
-                                    <h3 className="font-mark text-3xl text-white pl-24 mt-[-12px]">
+                                    <h3 className="font-mark text-3xl text-white pl-24 mt-[-12px] sm:text-xl">
                                         MoodBoard
                                     </h3>
                                 </div>
                                 <section>
-                                    <p className="font-semibold text-white text-lg max-w-[16rem]">
-                                        Use our optimised event planning tool
-                                        for your special day.
+                                    <p className="font-semibold text-white text-lg sm:text-sm">
+                                        Use our optimised event
+                                        <br />
+                                        planning tool for your
+                                        <br />
+                                        special day.
                                     </p>
-                                    <p className="font-semibold text-textBlack my-2">
+                                    <p className="font-semibold text-textBlack my-2 sm:text-sm">
                                         Manage every detail.
                                     </p>
                                     <div>
