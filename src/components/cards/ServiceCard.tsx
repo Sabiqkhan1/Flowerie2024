@@ -26,7 +26,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         >
             <div className="my-8">
                 <figure>
-                    <div className="h-96 aspect-[350/380] relative service-card">
+                    <div className="h-96 aspect-[350/380] relative service-card xs:h-72">
                         <div className="service-card-overlay">
                             <h4 className="text-2xl text-white">{label}</h4>
                         </div>

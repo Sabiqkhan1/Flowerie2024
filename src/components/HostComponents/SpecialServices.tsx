@@ -5,12 +5,12 @@ import ServiceCard from '../cards/ServiceCard'
 function SpecialServices(): JSX.Element {
     return (
         <section className="font-regular text-center my-16">
-            <h2 className="font-semibold text-4xl">
+            <h2 className="font-semibold text-4xl sm:text-xl">
                 You can host your venue
                 <br /> or provide a speical service
             </h2>
             {/* <div className="flex justify-center"> */}
-            <Grid container sx={{ px: '5rem' }}>
+            <Grid container className="px-[5rem]  content-center">
                 {hostItems.map((item, index) => (
                     <ServiceCard
                         key={index}
@@ -30,17 +30,17 @@ function SpecialServices(): JSX.Element {
                             width="100%"
                         />
                     </div>
-                    <div className="flex items-center text-5xl text-[#DF7E7E] font-semibold">
+                    <div className="flex items-center text-5xl text-[#DF7E7E] font-semibold sm:text-4xl">
                         Flowerie
                     </div>
                 </div>
                 <div className="max-w-lg mx-auto">
-                    <h2 className="text-[#BDBBBB] text-4xl font-semibold">
+                    <h2 className="text-[#BDBBBB] text-4xl font-semibold sm:text-2xl">
                         Host your <span className="text-[black]">venue</span>{' '}
                         while you{' '}
                         <span className="text-[black]">organise and earn</span>.
                     </h2>
-                    <h2 className="text-[#BDBBBB] mt-8 mb-4 text-4xl font-semibold">
+                    <h2 className="text-[#BDBBBB] mt-8 mb-4 text-4xl font-semibold sm:text-2xl">
                         Provide your services with{' '}
                         <span className="text-[black]">safe payments</span>.
                     </h2>

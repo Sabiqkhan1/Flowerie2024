@@ -8,15 +8,24 @@ interface MainFooterProps {
 const MainFooter: React.FC<MainFooterProps> = ({ space }): JSX.Element => {
     return (
         <footer
-            className={`w-full h-[336px] bg-[#f3f4f6] ${space} px-36 flex justify-center items-center`}
+            className={`w-full h-[336px] bg-[#f3f4f6] ${space} px-36 flex justify-center items-center sm:px-2 xs:mt-12`}
         >
-            <Grid container>
+            <Grid
+                container
+                className="xs:max-w-xs sm:max-w-sm"
+                columnSpacing={{ xs: 4 }}
+                rowSpacing={{ xs: 3 }}
+            >
                 {footerLinks.map((footerLink, index) => (
                     <Grid
                         key={index}
                         item
                         lg={3}
-                        sx={{ display: 'flex', flexDirection: 'column' }}
+                        xs={6}
+                        sx={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                        }}
                     >
                         <h4 className="font-inter-bold text-xs text-black uppercase my-3">
                             {footerLink.title}

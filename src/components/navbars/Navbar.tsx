@@ -85,7 +85,7 @@ const Navbar = (): JSX.Element => {
                     </span>
                 </div>
                 {!scrolled && (
-                    <div className="w-1/2 flex items-center justify-center sm:hidden">
+                    <div className="w-1/2 flex items-center justify-center sm:hidden ">
                         {navLinks.map(
                             (item: NavLinksType, index: React.Key) => (
                                 <NavLink

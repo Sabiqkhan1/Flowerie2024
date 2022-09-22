@@ -49,7 +49,7 @@ const Venues: FC = (): JSX.Element => {
                         <div className="w-1/2 h-full bg-gradient-to-b from-[rgba(0,0,0,0.41)] float-right px-4 pb-4 sm:w-full sm:bg-gradient-to-t sm:from-[rgba(256,256,256,0.20)]">
                             <div className="h-full flex flex-col justify-between pt-4">
                                 <div>
-                                    <section className="flex items-center">
+                                    <section className="flex items-center xs:relative">
                                         <img
                                             src={Logo}
                                             alt="logo"
@@ -63,7 +63,7 @@ const Venues: FC = (): JSX.Element => {
                                         MoodBoard
                                     </h3>
                                 </div>
-                                <section>
+                                <section className="   sm:absolute sm:right-1 sm:bottom-1">
                                     <p className="font-semibold text-white text-lg sm:text-sm">
                                         Use our optimised event
                                         <br />
@@ -77,7 +77,7 @@ const Venues: FC = (): JSX.Element => {
                                     <div>
                                         <Link
                                             to={`/member-dashboard/${1}`}
-                                            className="float-right"
+                                            className="float-right xs:mr-4"
                                         >
                                             <ContainedButton
                                                 color="white"

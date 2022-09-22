@@ -35,12 +35,18 @@ const HomeSearch: React.FC<HomeSearchProps> = ({ scrolled }): JSX.Element => {
     }
 
     return (
-        <form className={scrolled ? 'search-form scrolled' : 'search-form'}>
-            <div className="input-wrapper">
+        <form className={scrolled ? 'search-form scrolled   ' : 'search-form'}>
+            <div
+                className={
+                    scrolled
+                        ? 'input-wrapper  '
+                        : 'input-wrapper  -mt-12  xs:-mt-10 sm:-mt-24'
+                }
+            >
                 <input
                     type="text"
                     placeholder="Want to discover your dream venue?"
-                    className="focus:outline-none"
+                    className="focus:outline-none "
                     onFocus={toggle}
                 />
                 <button className="hover:bg-light-maroon-dark transition-colors duration-300">
@@ -74,7 +80,7 @@ const HomeSearch: React.FC<HomeSearchProps> = ({ scrolled }): JSX.Element => {
             >
                 <div className="bg-white shadow-lg">
                     <div className="w-full flex">
-                        <div className="p-2 w-1/6 min-w-[90px]">
+                        <div className="p-2 w-1/6 min-w-[90px] ">
                             <div className="my-2">
                                 <p className="font-semibold text-black text-xs">
                                     Min Guests
