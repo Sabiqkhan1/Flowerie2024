@@ -33,11 +33,11 @@ const Info: React.FunctionComponent = (): JSX.Element => {
     }
 
     return (
-        <section className="w-full min-h-[calc(100vh-96px)] bg-gray p-8 flex items-center justify-center">
-            <div className="w-4/5 bg-white shadow-xl">
+        <section className="w-full min-h-[calc(100vh-96px)] bg-gray p-8 flex items-center justify-center sm:p-5">
+            <div className="w-4/5 bg-white shadow-xl xs:w-full">
                 <Grid container>
                     <Grid item lg={3}>
-                        <section className="h-full bg-[#F1E2DB] px-4 py-6">
+                        <section className="h-full bg-[#F1E2DB] px-4 py-6 xs:">
                             <h4 className="font-medium text-xl">
                                 One More Thing!
                             </h4>

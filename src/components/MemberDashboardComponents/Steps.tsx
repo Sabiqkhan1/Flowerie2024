@@ -9,7 +9,7 @@ function CustomLink({ children, to, ...props }: LinkProps) {
     let match = useMatch({ path: resolved.pathname, end: false })
     return (
         <Link
-            className={`flex flex-col items-center mt-2 mx-12 ${
+            className={`flex flex-col items-center mt-2 mx-12 sm:mx-2  sm:text-xs sm:font-regular xs:h-[84px] xs:justify-evenly  ${
                 match ? 'text-textBlack' : 'text-[#85858C]'
             } ${
                 !match && 'hover:text-textBlack'
@@ -28,12 +28,15 @@ function CustomLink({ children, to, ...props }: LinkProps) {
 const Steps: React.FC = (): JSX.Element => {
     return (
         <div>
-            <header className="border-y border-gray">
-                <div className="flex items-center justify-center">
+            <header className="border-y border-gray xs:m-0 xs:p-0">
+                <div className="flex items-center justify-center  ">
                     {plannerLinks.map((link, index) => (
                         <CustomLink to={link.link} key={index}>
-                            {link.icon}
-                            <h4 className="font-medium text-lg">
+                            {/* {link.icon} */}
+                            <h4 className="font-medium text-lg sm:font-regular sm:text-center sm:text-sm xs:text-[10px]  ">
+                                {link.icon}
+                            </h4>
+                            <h4 className="font-medium text-lg sm:font-regular sm:text-center sm:text-sm xs:text-[10px]  ">
                                 {link.label}
                             </h4>
                         </CustomLink>
