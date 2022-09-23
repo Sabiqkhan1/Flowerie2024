@@ -7,12 +7,12 @@ import MessageSidebar from '../../components/sidebars/MessageSidebar'
 const VendorDashboard = () => {
     const location = useLocation()
     return (
-        <div className="w-full h-screen flex">
+        <div className="w-full h-screen flex ">
             <VendorSidebar />
             <div className="w-full flex flex-col">
                 <DashboardNavbar />
-                <div className="flex-grow flex justify-between">
-                    <div className="flex-grow max-h-messageSidebarHeight xs:max-h-messageSidebarMobileHeight overflow-auto no-scroll px-4">
+                <div className="flex-grow flex justify-between ">
+                    <div className="flex-grow max-h-messageSidebarHeight xs:max-h-messageSidebarMobileHeight overflow-auto no-scroll px-4   ">
                         <Outlet />
                     </div>
 
