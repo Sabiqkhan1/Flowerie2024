@@ -5,27 +5,27 @@ import { BiCalculator, BiBookAlt } from 'react-icons/bi'
 export const plannerLinks = [
     {
         label: 'My Wedding',
-        icon: <GiDiamondRing style={{ fontSize: 36 }} />,
+        icon: <GiDiamondRing className="text-3xl  sm:text-xl" />,
         link: 'wedding',
     },
     {
         label: 'Checklist',
-        icon: <MdPlaylistAddCheck style={{ fontSize: 36 }} />,
+        icon: <MdPlaylistAddCheck className="text-3xl  sm:text-xl" />,
         link: 'checklist',
     },
     {
         label: 'Suppliers ',
-        icon: <BiBookAlt style={{ fontSize: 36 }} />,
+        icon: <BiBookAlt className="text-3xl  sm:text-xl" />,
         link: 'suppliers',
     },
     {
         label: 'Guest Lists',
-        icon: <HiOutlineUserGroup style={{ fontSize: 36 }} />,
+        icon: <HiOutlineUserGroup className="text-3xl  sm:text-xl" />,
         link: 'guest-lists',
     },
     {
         label: 'Budget Planner',
-        icon: <BiCalculator style={{ fontSize: 36 }} />,
+        icon: <BiCalculator className="text-3xl  sm:text-xl" />,
         link: 'budget-planner',
     },
 ]

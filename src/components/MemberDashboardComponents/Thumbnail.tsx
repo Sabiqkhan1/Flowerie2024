@@ -24,7 +24,7 @@ const Thumbnail: React.FunctionComponent = (): JSX.Element => {
         setCover(newFile[0])
     }
     return (
-        <figure className="w-96 aspect-[450/400] relative">
+        <figure className="w-96 aspect-[450/400] relative sm:w-full sm:h-60 ">
             <div className="absolute w-full h-full flex flex-col justify-between">
                 <div className="text-right p-4">
                     <label htmlFor="upload-wedding-image">

@@ -21,7 +21,7 @@ import SavingsOutlinedIcon from '@mui/icons-material/SavingsOutlined'
 const Wedding: React.FC = (): JSX.Element => {
     return (
         <Box sx={{ py: 5 }}>
-            <Box sx={{ px: 10 }}>
+            <Box sx={{ px: { lg: 10, xs: 3 } }}>
                 <Box
                     sx={{
                         display: 'flex',
@@ -29,9 +29,10 @@ const Wedding: React.FC = (): JSX.Element => {
                         overflow: 'hidden',
                         boxShadow: '2px 5px 10px 0px #3f3f3f60',
                     }}
+                    className="sm:flex-col"
                 >
                     <Thumbnail />
-                    <section className="flex-grow bg-[#ECDADA] px-14 py-6">
+                    <section className="flex-grow bg-[#ECDADA] px-14 py-6 sm:px-2">
                         <div className="flex justify-center">
                             <div className="flex">
                                 <div className="w-20 h-20 rounded-full bg-[#3F5A8F] mr-[-25px] z-10 flex items-center justify-center font-semibold text-white text-2xl">
@@ -91,7 +92,9 @@ const Wedding: React.FC = (): JSX.Element => {
                         </section>
                         <section className="mt-4 flex items-center justify-between font-semibold text-textBlack">
                             <div className="text-center">
-                                <h4 className="mb-3">Suppliers Hired:</h4>
+                                <h4 className="mb-3 sm:text-sm xs:text-xs">
+                                    Suppliers Hired:
+                                </h4>
                                 <small className="text-sm">
                                     3
                                     <span className="text-zinc-500 text-xs">
@@ -100,7 +103,9 @@ const Wedding: React.FC = (): JSX.Element => {
                                 </small>
                             </div>
                             <div className="text-center">
-                                <h4 className="mb-3">Tasks Completed:</h4>
+                                <h4 className="mb-3 sm:text-sm xs:text-xs">
+                                    Tasks Completed:
+                                </h4>
                                 <small className="text-sm">
                                     42
                                     <span className="text-zinc-500 text-xs">
@@ -109,7 +114,9 @@ const Wedding: React.FC = (): JSX.Element => {
                                 </small>
                             </div>
                             <div className="text-center">
-                                <h4 className="mb-3">Guests Attending</h4>
+                                <h4 className="mb-3 sm:text-sm xs:text-xs">
+                                    Guests Attending
+                                </h4>
                                 <small className="text-sm">
                                     122
                                     <span className="text-zinc-500 text-xs">
@@ -118,14 +125,16 @@ const Wedding: React.FC = (): JSX.Element => {
                                 </small>
                             </div>
                             <div className="text-center">
-                                <h4 className="mb-3">Budget Used</h4>
+                                <h4 className="mb-3 sm:text-sm xs:text-xs">
+                                    Budget Used
+                                </h4>
                                 <small className="text-sm">64%</small>
                             </div>
                         </section>
                     </section>
                 </Box>
             </Box>
-            <Box sx={{ py: 4, pl: 10 }}>
+            <Box sx={{ py: 4, pl: { lg: 10, md: 5, sm: 4, xs: 3 } }}>
                 <section className="mb-4">
                     <h2 className="font-semibold text-textBlack text-2xl">
                         Suppliers
@@ -145,8 +154,8 @@ const Wedding: React.FC = (): JSX.Element => {
                     ))}
                 </DraggableMenu>
             </Box>
-            <Box sx={{ px: 10 }}>
-                <Grid container spacing={10}>
+            <Box sx={{ px: { lg: 10, md: 5, sm: 4, xs: 3 } }}>
+                <Grid container spacing={{ xs: 3, sm: 3, md: 6, lg: 10 }}>
                     <Grid item lg={6}>
                         <h2 className="font-semibold text-textBlack text-2xl">
                             Upcoming Tasks
@@ -178,7 +187,7 @@ const Wedding: React.FC = (): JSX.Element => {
                             sx={{
                                 border: '1px solid #C4C4C4',
                                 borderRadius: '20px',
-                                py: 0,
+                                mt: 2,
                             }}
                         >
                             {memberTasks.map((task, index) => (
@@ -198,12 +207,12 @@ const Wedding: React.FC = (): JSX.Element => {
                                         secondary={task.category}
                                         primaryTypographyProps={{
                                             fontFamily: 'regular',
-                                            fontSize: 20,
+                                            fontSize: { lg: 18, xs: 15 },
                                             lineHeight: '24px',
                                         }}
                                         secondaryTypographyProps={{
                                             fontFamily: 'regular',
-                                            fontSize: 16,
+                                            fontSize: { lg: 16, xs: 12 },
                                             color: '#868686',
                                             lineHeight: '19.5px',
                                         }}
@@ -212,7 +221,7 @@ const Wedding: React.FC = (): JSX.Element => {
                             ))}
                         </List>
                     </Grid>
-                    <Grid item lg={6}>
+                    <Grid item lg={6} sx={{ width: '100%' }}>
                         <h2 className="font-semibold text-textBlack text-2xl">
                             Guest List
                         </h2>
@@ -243,7 +252,7 @@ const Wedding: React.FC = (): JSX.Element => {
                             sx={{
                                 border: '1px solid #C4C4C4',
                                 borderRadius: '20px',
-                                py: 0,
+                                mt: 2,
                             }}
                         >
                             {memberGuests.map((guest, index) => (
@@ -268,12 +277,12 @@ const Wedding: React.FC = (): JSX.Element => {
                                         secondary={guest.status}
                                         primaryTypographyProps={{
                                             fontFamily: 'regular',
-                                            fontSize: 20,
+                                            fontSize: { lg: 18, xs: 15 },
                                             lineHeight: '24px',
                                         }}
                                         secondaryTypographyProps={{
                                             fontFamily: 'regular',
-                                            fontSize: 16,
+                                            fontSize: { lg: 16, xs: 12 },
                                             color: '#868686',
                                             lineHeight: '19.5px',
                                         }}
@@ -284,9 +293,9 @@ const Wedding: React.FC = (): JSX.Element => {
                     </Grid>
                 </Grid>
             </Box>
-            <Box sx={{ py: 4, px: 10 }}>
+            <Box sx={{ py: 4, px: { lg: 10, md: 5, sm: 4, xs: 3 } }}>
                 <Grid container>
-                    <Grid item lg={12}>
+                    <Grid item lg={12} md={12} sm={12} xs={12}>
                         <h2 className="font-semibold text-textBlack text-2xl">
                             Budget
                         </h2>
@@ -315,12 +324,12 @@ const Wedding: React.FC = (): JSX.Element => {
                         </p>
                         <div className="border border-gray rounded-20 shadow-xl shadow-black/10 mt-4">
                             <Grid container>
-                                <Grid item lg={6}>
-                                    <div className="h-72 border-r border-gray flex flex-col items-center justify-around">
-                                        <h4 className="font-semibold text-2xl text-textBlack">
+                                <Grid item lg={6} md={6} sm={6} xs={12}>
+                                    <div className="h-72 border-r border-gray flex flex-col items-center justify-around  sm:border-r-0 sm:border-b sm:border-gray sm:h-56">
+                                        <h4 className="font-semibold text-2xl text-textBlack xs:text-xl">
                                             Estimated Cost
                                         </h4>
-                                        <h3 className="font-semibold text-4xl text-textBlack">
+                                        <h3 className="font-semibold text-4xl text-textBlack xs:text-2xl">
                                             £16,000
                                         </h3>
                                         <SavingsOutlinedIcon
@@ -331,12 +340,12 @@ const Wedding: React.FC = (): JSX.Element => {
                                         />
                                     </div>
                                 </Grid>
-                                <Grid item lg={6}>
-                                    <div className="h-72 flex flex-col items-center justify-around">
-                                        <h4 className="font-semibold text-2xl text-textBlack">
+                                <Grid item lg={6} md={6} sm={6} xs={12}>
+                                    <div className="h-72 flex flex-col items-center justify-around  sm:h-56">
+                                        <h4 className="font-semibold text-2xl text-textBlack xs:text-xl">
                                             Total Cost
                                         </h4>
-                                        <h3 className="font-semibold text-4xl text-[#55B97D]">
+                                        <h3 className="font-semibold text-4xl text-[#55B97D] xs:text-2xl">
                                             £6,322
                                         </h3>
                                         <GiTwoCoins
