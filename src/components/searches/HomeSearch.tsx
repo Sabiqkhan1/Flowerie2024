@@ -4,6 +4,7 @@ import SearchIcon from '@mui/icons-material/Search'
 import 'react-date-range/dist/styles.css'
 import 'react-date-range/dist/theme/default.css'
 import { DateRangePicker, Range } from 'react-date-range'
+import './style.css'
 export interface HomeSearchProps
     extends React.DetailedHTMLProps<
         React.FormHTMLAttributes<HTMLFormElement>,
@@ -75,44 +76,44 @@ const HomeSearch: React.FC<HomeSearchProps> = ({ scrolled }): JSX.Element => {
                     top: scrolled ? 63 : 58,
                     overflow: 'hidden',
                     borderRadius: 1,
-                    maxWidth: '100vw',
+                    maxWidth: '96vw',
                 }}
             >
-                <div className="bg-white shadow-lg">
+                <div className="bg-white shadow-lg  ">
                     <div className="w-full flex">
-                        <div className="p-2 w-1/6 min-w-[90px] ">
+                        <div className="p-2 w-1/6 min-w-[80px]  text-center ">
                             <div className="my-2">
-                                <p className="font-semibold text-black text-xs">
+                                <p className="font-semibold text-black text-xs xs:text-[0.5rem]">
                                     Min Guests
                                 </p>
                                 <input className="bg-white border border-black/60 rounded-md p-2 w-full focus-visible:outline-none font-roboto-regular text-sm text-black" />
                             </div>
                             <div className="my-2">
-                                <p className="font-semibold text-black text-xs">
+                                <p className="font-semibold text-black text-xs xs:text-[0.5rem]">
                                     Max Guests
                                 </p>
                                 <input className="bg-white border border-black/60 rounded-md p-2 w-full focus-visible:outline-none font-roboto-regular text-sm text-black" />
                             </div>
                         </div>
-                        <div className="flex-grow max-w-full">
+                        <div className="flex-grow max-w-full ">
                             <DateRangePicker
                                 moveRangeOnFirstSelection={false}
                                 onChange={(item) => setDate([item.selection])}
-                                months={2}
+                                months={window.screen.width < 600 ? 1 : 2}
                                 direction="horizontal"
                                 ranges={date}
                                 showMonthAndYearPickers={true}
                                 showDateDisplay={false}
                                 showPreview={true}
                                 editableDateInputs={true}
-                                className="search-date-range"
+                                className="search-date-range  "
                                 weekdayDisplayFormat="E"
                             />
                         </div>
                     </div>
                     <div className="flex items-center">
                         <div className="w-1/6 min-w-[90px] p-2">
-                            <p className="font-regular text-xs text-[#A0A0A0]">
+                            <p className="font-regular text-xs text-[#A0A0A0] xs:text-[0.5rem]">
                                 Select a single date or date range
                             </p>
                         </div>
