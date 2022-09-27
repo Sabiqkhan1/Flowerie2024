@@ -18,7 +18,7 @@ const Overview = () => {
             <h1 className="font-semibold text-4xl">Overview</h1>
             <OverviewList />
             <div className="w-11/12 mx-auto table border border-gray rounded-lg overflow-hidden">
-                <div className="flex px-4 py-3 bg-[rgba(226,154,154,0.5)]">
+                <div className="flex px-4 py-3 bg-[rgba(226,154,154,0.5)] ">
                     <Button
                         variant="contained"
                         startIcon={<AddCircleIcon />}
@@ -55,7 +55,7 @@ const Overview = () => {
                         Group
                     </Button>
                 </div>
-                <div className="p-6">
+                <div className="p-6 sm:p-4 xs:p-2">
                     <TableContainer
                         component={Paper}
                         sx={{ boxShadow: 'none' }}

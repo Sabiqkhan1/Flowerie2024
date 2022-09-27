@@ -29,51 +29,19 @@ const GuestGroupRow: React.FC<GuestGropRowProps> = ({ group, groupId }) => {
     }
     const open = Boolean(anchorEl)
     const id = open ? 'simple-popover' : undefined
+
+    const cellstyle = {
+        fontFamily: 'medium',
+        color: 'black',
+        fontSize: { lg: 16 },
+        p: 1,
+    }
     return (
-        <TableRow>
-            <TableCell
-                sx={{
-                    fontFamily: 'medium',
-                    color: 'black',
-                    fontSize: 16,
-                    p: 1,
-                }}
-            >
-                {group}
-            </TableCell>
-            <TableCell
-                sx={{
-                    fontFamily: 'medium',
-                    color: 'black',
-                    fontSize: 16,
-                    textTransform: 'uppercase',
-                    p: 1,
-                }}
-            >
-                Reception
-            </TableCell>
-            <TableCell
-                sx={{
-                    fontFamily: 'medium',
-                    color: 'black',
-                    fontSize: 16,
-                    textTransform: 'uppercase',
-                    p: 1,
-                }}
-            >
-                Ceremony
-            </TableCell>
-            <TableCell
-                sx={{
-                    fontFamily: 'medium',
-                    color: 'black',
-                    fontSize: 16,
-                    textTransform: 'uppercase',
-                    p: 1,
-                }}
-            >
-                Wedding Breakfast
-            </TableCell>
+        <TableRow sx={{ padding: 0 }}>
+            <TableCell sx={cellstyle}>{group}</TableCell>
+            <TableCell sx={cellstyle}>Reception</TableCell>
+            <TableCell sx={cellstyle}>Ceremony</TableCell>
+            <TableCell sx={cellstyle}>Wedding Breakfast</TableCell>
             <TableCell sx={{ p: 1 }}>
                 <IconButton
                     size="small"
