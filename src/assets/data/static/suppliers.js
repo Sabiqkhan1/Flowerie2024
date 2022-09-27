@@ -13,73 +13,97 @@ import { RiShirtLine } from 'react-icons/ri'
 import { HiOutlineDotsCircleHorizontal } from 'react-icons/hi'
 import VideoCameraBackOutlinedIcon from '@mui/icons-material/VideoCameraBackOutlined'
 import AirportShuttleOutlinedIcon from '@mui/icons-material/AirportShuttleOutlined'
+import { FiTruck } from 'react-icons/fi'
+import { MdVideoCameraBack } from 'react-icons/md'
 export const suppliers = [
     {
         label: 'Venues',
-        icon: <IoHomeOutline style={{ fontSize: 56, color: '#2E2E48' }} />,
+        icon: (
+            <IoHomeOutline className="text-[56px]  sm:text-[32px] text-[#2E2E48]" />
+        ),
     },
     {
         label: 'Catering ',
-        icon: <BiDish style={{ fontSize: 56, color: '#2E2E48' }} />,
+        icon: <BiDish className="text-[56px]  sm:text-[32px] text-[#2E2E48]" />,
     },
     {
         label: 'Photography',
         icon: (
-            <VideoCameraBackOutlinedIcon
-                style={{ fontSize: 56, color: '#2E2E48' }}
-            />
+            // <VideoCameraBackOutlinedIcon
+            //     style={{ fontSize: { lg: '56px', sm: '1.25rem' } }}
+            //     className="text-[#2E2E48]"
+            // />
+            <MdVideoCameraBack className="text-[56px]  sm:text-[32px] text-[#2E2E48]" />
         ),
     },
     {
         label: 'Decor & LIghting',
-        icon: <GiButterflyFlower style={{ fontSize: 56, color: '#2E2E48' }} />,
+        icon: (
+            <GiButterflyFlower className="text-[56px]  sm:text-[32px] text-[#2E2E48]" />
+        ),
     },
     {
         label: 'Transport',
         icon: (
-            <AirportShuttleOutlinedIcon
-                style={{ fontSize: 56, color: '#2E2E48' }}
-            />
+            // <AirportShuttleOutlinedIcon
+            //     style={{ fontSize: { lg: '56px', md: '56px', sm: '1.25rem' } }}
+            //     className="text-[#2E2E48]"
+            // />
+            <FiTruck className="text-[56px]  sm:text-[32px] text-[#2E2E48]" />
         ),
     },
     {
         label: 'Hair and Makeup',
-        icon: <GiLipstick style={{ fontSize: 56, color: '#2E2E48' }} />,
+        icon: (
+            <GiLipstick className="text-[56px]  sm:text-[32px] text-[#2E2E48]" />
+        ),
     },
     {
         label: 'Music',
-        icon: <GiMicrophone style={{ fontSize: 56, color: '#2E2E48' }} />,
+        icon: (
+            <GiMicrophone className="text-[56px]  sm:text-[32px] text-[#2E2E48]" />
+        ),
     },
     {
         label: 'Entertainment',
-        icon: <GiCarnivalMask style={{ fontSize: 56, color: '#2E2E48' }} />,
+        icon: (
+            <GiCarnivalMask className="text-[56px]  sm:text-[32px] text-[#2E2E48]" />
+        ),
     },
     {
         label: 'Invitation',
-        icon: <AiOutlineMail style={{ fontSize: 56, color: '#2E2E48' }} />,
+        icon: (
+            <AiOutlineMail className="text-[56px]  sm:text-[32px] text-[#2E2E48]" />
+        ),
     },
     {
         label: 'Canapes',
-        icon: <GiCakeSlice style={{ fontSize: 56, color: '#2E2E48' }} />,
+        icon: (
+            <GiCakeSlice className="text-[56px]  sm:text-[32px] text-[#2E2E48]" />
+        ),
     },
     {
         label: 'Groom Attire',
-        icon: <RiShirtLine style={{ fontSize: 56, color: '#2E2E48' }} />,
+        icon: (
+            <RiShirtLine className="text-[56px]  sm:text-[32px] text-[#2E2E48]" />
+        ),
     },
     {
         label: 'Honeymoon',
-        icon: <IoAirplaneOutline style={{ fontSize: 56, color: '#2E2E48' }} />,
+        icon: (
+            <IoAirplaneOutline className="text-[56px]  sm:text-[32px] text-[#2E2E48]" />
+        ),
     },
     {
         label: 'Bridal Attire',
-        icon: <GiAmpleDress style={{ fontSize: 56, color: '#2E2E48' }} />,
+        icon: (
+            <GiAmpleDress className="text-[56px]  sm:text-[32px] text-[#2E2E48]" />
+        ),
     },
     {
         label: 'Other',
         icon: (
-            <HiOutlineDotsCircleHorizontal
-                style={{ fontSize: 56, color: '#2E2E48' }}
-            />
+            <HiOutlineDotsCircleHorizontal className="text-[56px]  sm:text-[32px] text-[#2E2E48]" />
         ),
     },
 ]

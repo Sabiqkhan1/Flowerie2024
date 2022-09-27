@@ -7,7 +7,7 @@ import Grid from '@mui/material/Grid'
 import { suppliers } from '../../../assets/data/static/suppliers'
 const Suppliers = () => {
     return (
-        <div className="p-12">
+        <div className="p-12 xs:p-8">
             <div className="text-right">
                 <SupplierRadio />
             </div>
@@ -49,13 +49,14 @@ const Suppliers = () => {
                     />
                 </div>
             </section>
-            <Grid container spacing={8}>
+            <Grid container spacing={{ lg: 8, md: 4, sm: 2, xs: 2 }}>
                 {suppliers.map((supply, index) => (
-                    <Grid key={index} item lg={3}>
+                    <Grid key={index} item lg={3} md={3} sm={4} xs={6}>
                         <Button
                             sx={{
                                 width: '100%',
-                                aspectRatio: '280/200',
+
+                                aspectRatio: '280/280',
                                 bgcolor: '#E6E6E6',
                                 borderRadius: '20px',
                                 textTransform: 'none',
@@ -66,7 +67,7 @@ const Suppliers = () => {
                             className="flex flex-col items-center justify-center"
                         >
                             {supply.icon}
-                            <h4 className="font-medium text-2xl text-textBlack mt-4">
+                            <h4 className="font-medium text-2xl text-textBlack mt-4 md:text-xl sm:text-xl sm:font-normal xs:text-sm">
                                 {supply.label}
                             </h4>
                         </Button>
