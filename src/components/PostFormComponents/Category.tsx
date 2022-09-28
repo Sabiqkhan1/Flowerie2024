@@ -44,14 +44,15 @@ const Category: React.FC = (): JSX.Element => {
                             alt="cover"
                             style={{
                                 visibility: loading ? 'hidden' : 'visible',
+                                width: '100%',
                             }}
                             onLoad={imageLoaded}
                         />
                     </div>
                 </Grid>
-                <Grid item lg={6}>
+                <Grid item lg={6} sm={12} xs={12}>
                     <div className="h-full bg-white flex flex-col">
-                        <div className="text-right py-4">
+                        <div className="text-right py-4 sm:text-center">
                             <PostFormButton>Help</PostFormButton>
                             <PostFormButton
                                 onClick={() => navigate('/vendor-dashboard')}
@@ -60,7 +61,7 @@ const Category: React.FC = (): JSX.Element => {
                             </PostFormButton>
                         </div>
                         <div className="flex-grow flex justify-center items-center">
-                            <div className="w-3/5 h-[calc(100vh-160px)] overflow-auto no-scroll">
+                            <div className="w-3/5 h-[calc(100vh-160px)] overflow-auto no-scroll sm:w-4/5 sm:mx-auto">
                                 <div className="w-full h-full">
                                     {postCategories.map((category, index) => (
                                         <PostCategoryCard

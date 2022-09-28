@@ -11,8 +11,8 @@ import {
 import { AiOutlineMail } from 'react-icons/ai'
 import { RiShirtLine } from 'react-icons/ri'
 import { HiOutlineDotsCircleHorizontal } from 'react-icons/hi'
-import VideoCameraBackOutlinedIcon from '@mui/icons-material/VideoCameraBackOutlined'
-import AirportShuttleOutlinedIcon from '@mui/icons-material/AirportShuttleOutlined'
+// import VideoCameraBackOutlinedIcon from '@mui/icons-material/VideoCameraBackOutlined'
+// import AirportShuttleOutlinedIcon from '@mui/icons-material/AirportShuttleOutlined'
 import { FiTruck } from 'react-icons/fi'
 import { MdVideoCameraBack } from 'react-icons/md'
 export const suppliers = [

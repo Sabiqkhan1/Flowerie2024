@@ -24,8 +24,10 @@ const PostFormCounter: React.FC<PostFormCounterProps> = ({
     toggleLimit,
 }): JSX.Element => {
     return (
-        <div>
-            <label className="font-semibold text-[#858585] pl-2">{label}</label>
+        <div className="sm:mt-20">
+            <label className="font-semibold text-[#858585] pl-2 pb-2">
+                {label}
+            </label>
             <input
                 type="number"
                 value={counter}

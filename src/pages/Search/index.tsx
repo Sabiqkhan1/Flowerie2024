@@ -74,10 +74,10 @@ const Search: React.FC = (): JSX.Element => {
             <SearchNavbar placeholder="Want to discover your dream venue?" />
             <LoginModal />
             <SignupModal />
-            <div className="w-full mt-24 relative">
+            <div className="w-full mt-24 relative ">
                 <Grid container>
                     <Grid item lg={8}>
-                        <div className="w-full h-[calc(100vh-96px)] overflow-auto thin-scroll p-8">
+                        <div className="w-full h-[calc(100vh-96px)] overflow-auto thin-scroll p-8 sm:p-4 sm:w-6/12">
                             <div className="bg-white">
                                 <div className="flex w-full">
                                     <div id="container">

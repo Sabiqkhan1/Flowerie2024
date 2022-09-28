@@ -22,6 +22,9 @@ const SearchCard: React.FC<SearchTagProps> = ({ tag }): JSX.Element => {
             sx={{
                 margin: {
                     lg: '20px auto',
+                    md: '20px auto',
+                    sm: '20px auto',
+                    xs: '15px auto',
                 },
                 flexGrow: 1,
                 background: 'transparent',

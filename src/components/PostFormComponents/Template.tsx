@@ -29,7 +29,7 @@ const Template: React.FC<TemplateProps> = ({
     const [loading, setLoading] = useState<boolean>(true)
 
     return (
-        <div className="h-screen w-full">
+        <div className="h-screen w-full sm:w-[100vw]">
             {loading && (
                 <div className="fixed z-50 w-screen h-screen flex justify-center items-center">
                     <ClipLoader loading={loading} size={50} color="#DF7E7E" />
@@ -40,9 +40,10 @@ const Template: React.FC<TemplateProps> = ({
                 sx={{
                     height: '100%',
                     visibility: loading ? 'hidden' : 'visible',
+                    justifyContent: 'center',
                 }}
             >
-                <Grid item lg={6}>
+                <Grid item lg={6} sm={10} xs={12}>
                     <div className="relative">
                         <div className="absolute w-full h-full flex flex-col items-center pt-12">
                             <p className="max-w-sm font-regular text-4xl text-center text-white">
@@ -55,6 +56,7 @@ const Template: React.FC<TemplateProps> = ({
                             src={cover}
                             alt="cover"
                             onLoad={() => setLoading(false)}
+                            className="sm:h-[70vh] sm:w-[100vw]"
                         />
                     </div>
                 </Grid>
