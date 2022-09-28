@@ -37,7 +37,7 @@ const GuestGroupRow: React.FC<GuestGropRowProps> = ({ group, groupId }) => {
         p: 1,
     }
     return (
-        <TableRow sx={{ padding: 0 }}>
+        <TableRow sx={{ padding: 0, overflowX: 'scroll' }}>
             <TableCell sx={cellstyle}>{group}</TableCell>
             <TableCell sx={cellstyle}>Reception</TableCell>
             <TableCell sx={cellstyle}>Ceremony</TableCell>
