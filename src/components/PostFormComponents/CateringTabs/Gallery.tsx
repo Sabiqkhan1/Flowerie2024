@@ -130,7 +130,7 @@ const Gallery: React.FC<TabProps> = ({ nextStep, prevStep }): JSX.Element => {
         >
             <ImageModal image={file!} handleSaveCaption={handleSaveCaption} />
             <div className="w-full h-[calc(100vh-190px)] overflow-auto thin-scroll">
-                <div className="w-full h-full flex items-center justify-center px-4 flex-col">
+                <div className="w-full h-full flex items-center justify-center px-4 flex-col sm:px-2 xs:px-1">
                     {files.length < 2 ? (
                         <>
                             <div className="text-right py-4">
@@ -144,7 +144,7 @@ const Gallery: React.FC<TabProps> = ({ nextStep, prevStep }): JSX.Element => {
                             </div>
                             <div
                                 {...getRootProps()}
-                                className="w-4/5 h-4/5 rounded-2xl border border-black border-dashed flex flex-col justify-between items-center py-8"
+                                className="w-4/5 h-4/5 rounded-2xl border border-black border-dashed flex flex-col justify-between items-center py-8 sm:mt-8 sm:mb-5 xs:p-2  sm:justify-evenly"
                             >
                                 <div className="flex flex-col items-center">
                                     <PhotoOutlinedIcon
@@ -165,7 +165,7 @@ const Gallery: React.FC<TabProps> = ({ nextStep, prevStep }): JSX.Element => {
                                 />
                                 <label
                                     htmlFor="image-upload"
-                                    className="font-semibold text-lg underline underline-offset-1 cursor-pointer"
+                                    className="font-semibold text-lg underline underline-offset-1 cursor-pointer xs:text-sm"
                                 >
                                     Upload from your device
                                 </label>

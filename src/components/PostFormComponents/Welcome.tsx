@@ -6,6 +6,7 @@ import cover from '../../assets/images/post-home.jpg'
 const Img = styled('img')({
     display: 'block',
     width: '100%',
+    // height: window.screen.width < 600 ? '50vh' : '100vh',
     maxHeight: '100vh',
     objectFit: 'cover',
 })
@@ -14,10 +15,10 @@ const Welcome: React.FC = (): JSX.Element => {
     return (
         <div className="h-screen w-full">
             <Grid container sx={{ height: '100%' }}>
-                <Grid item lg={6}>
+                <Grid item lg={6} md={6} sm={6}>
                     <Img src={cover} alt="cover" />
                 </Grid>
-                <Grid item lg={6}>
+                <Grid item lg={6} md={6} sm={6}>
                     <div className="h-full bg-black p-4 flex flex-col">
                         <div className="text-right">
                             <Link to="/vendor-dashboard">

@@ -46,12 +46,12 @@ import Appearance from '../components/ChatComponents/Appearance'
 //POST FORM TAB
 import Welcome from '../components/PostFormComponents/Welcome'
 import Category from '../components/PostFormComponents/Category'
-
-//VENUE CATEGORY TAB
 import Venue from '../components/PostFormComponents/Venue'
 import PostCatering from '../components/PostFormComponents/Catering'
 import Decor from '../components/PostFormComponents/Decor&Lighting'
 import Hair from '../components/PostFormComponents/Hair&Beauty'
+
+//VENUE CATEGORY TAB
 
 //MEMBER DASHBOARD TAB
 import Info from '../components/MemberDashboardComponents/Info'
@@ -90,6 +90,7 @@ const AppRoutes = (): JSX.Element => {
                 <Route path="catering" element={<PostCatering />} />
                 <Route path="decor&lighting" element={<Decor />} />
                 <Route path="hair&beauty" element={<Hair />} />
+                <Route path="videography" element={<Videography />} />
             </Route>
             <Route path="/mood-board" element={<MoodBoard />}>
                 <Route path="" element={<Venues />} />

@@ -17,8 +17,10 @@ const AmenityCard: React.FC<AmenityCardProps> = ({
     handleAmenitySelect,
 }): JSX.Element => {
     return (
-        <div className="m-5 flex flex-col justify-between max-w-[70px]">
-            <p className="text-center font-semibold text-xs">{label}</p>
+        <div className="m-5 flex flex-col justify-between max-w-[70px] sm:m-3 xs:m-2 ">
+            <p className="text-center font-semibold text-xs  w-full my-1">
+                {label}
+            </p>
             <ButtonBase onClick={() => handleAmenitySelect(id)}>
                 <div
                     className={`w-16 h-16 rounded-2xl ${

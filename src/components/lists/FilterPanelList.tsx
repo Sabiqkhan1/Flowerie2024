@@ -40,7 +40,7 @@ const FilterPanelList = () => {
         return () => setCategoryFilterId(id)
     }
     return (
-        <div>
+        <div className=" ">
             <h4 className="font-semibold text-2xl">Checklist</h4>
             <div className="my-4">
                 <h5 className="font-semibold">RESULTS</h5>

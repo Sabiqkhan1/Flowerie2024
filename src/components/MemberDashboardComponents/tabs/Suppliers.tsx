@@ -11,13 +11,15 @@ const Suppliers = () => {
             <div className="text-right">
                 <SupplierRadio />
             </div>
-            <h1 className="font-semibold text-4xl">Supplier Manager</h1>
+            <h1 className="font-semibold text-4xl sm:text-2xl xs:text-xl sm:mt-2">
+                Supplier Manager
+            </h1>
             <section className="my-4">
                 <p className="font-medium text-textBlack text-xs">
                     You have hired <strong>2</strong> out of <strong>13</strong>{' '}
                     suppliers
                 </p>
-                <div className="w-1/4 my-2">
+                <div className="w-1/4 my-2 sm:w-2/4 ">
                     <MobileStepper
                         variant="progress"
                         steps={13}

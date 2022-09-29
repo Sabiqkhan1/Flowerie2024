@@ -36,8 +36,8 @@ const Scene: React.FC<TabProps> = ({ nextStep }): JSX.Element => {
             cover={cover}
             description="Let’s set the scene!"
         >
-            <div className="w-full h-[calc(100vh-190px)] overflow-auto thin-scroll">
-                <div className="w-full px-4 h-full flex flex-col">
+            <div className="w-full h-[calc(100vh-190px)] overflow-auto thin-scroll sm:mt-8 ">
+                <div className="w-full px-4 h-full flex flex-col ">
                     <div>
                         <label className="font-regular mb-1">
                             Firstly let’s name your service

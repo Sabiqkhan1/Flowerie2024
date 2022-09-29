@@ -5,7 +5,7 @@ const MemberDashboard = () => {
     return (
         <>
             <SearchNavbar placeholder="Want to discover your dream venue?" />
-            <div className="w-full min-h-screen pt-24">
+            <div className="w-full min-h-screen pt-24 sm:pt-16">
                 <Outlet />
             </div>
         </>

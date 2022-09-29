@@ -54,8 +54,8 @@ const Amenities: React.FC<TabProps> = ({ nextStep, prevStep }): JSX.Element => {
             description="What do you specialise in?"
         >
             <div className="w-full h-full flex items-center justify-center">
-                <div className="w-full h-[calc(100vh-190px)] overflow-auto px-2">
-                    <div className="flex flex-wrap">
+                <div className="w-full h-[calc(100vh-190px)] overflow-auto sm:h-full px-2">
+                    <div className="flex flex-wrap justify-around xs:mt-10">
                         {amenities.map((amenity, index) => (
                             <AmenityCard
                                 key={index}

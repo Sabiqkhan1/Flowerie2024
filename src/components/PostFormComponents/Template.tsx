@@ -60,7 +60,7 @@ const Template: React.FC<TemplateProps> = ({
                         />
                     </div>
                 </Grid>
-                <Grid item lg={6}>
+                <Grid item lg={6} sm={10} xs={11}>
                     <div className="h-full bg-white flex flex-col relative">
                         <div className="w-full text-right py-4 absolute top-0 z-50">
                             <PostFormButton>Help</PostFormButton>
@@ -70,7 +70,7 @@ const Template: React.FC<TemplateProps> = ({
                                 Save and exit
                             </PostFormButton>
                         </div>
-                        <div className="flex-grow flex justify-center items-center">
+                        <div className="flex-grow flex justify-center items-center xs:mt-10">
                             {children}
                         </div>
                         <div className="flex items-center justify-between border-t border-[rgba(184,178,178,1)] p-4">

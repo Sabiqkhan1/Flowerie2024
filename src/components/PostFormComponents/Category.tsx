@@ -65,6 +65,7 @@ const Category: React.FC = (): JSX.Element => {
                                 <div className="w-full h-full">
                                     {postCategories.map((category, index) => (
                                         <PostCategoryCard
+                                            key={index}
                                             to={category.to}
                                             label={category.label}
                                             thumb={category.thumb}

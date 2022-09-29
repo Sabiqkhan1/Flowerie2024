@@ -16,7 +16,7 @@ const CheckList: React.FunctionComponent = (): JSX.Element => {
     return (
         <Box sx={{ py: 5, px: 6 }}>
             <Grid container spacing={1}>
-                <Grid item lg={3} component="aside">
+                <Grid item lg={3} xs={12} component="aside">
                     <FilterPanelList />
                 </Grid>
                 <Grid item lg={9}>

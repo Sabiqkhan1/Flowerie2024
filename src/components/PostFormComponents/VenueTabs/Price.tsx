@@ -36,8 +36,8 @@ const Price: React.FC<TabProps> = ({ nextStep, prevStep }): JSX.Element => {
             cover={cover}
             description="Now for the fun part, let’s price your service!"
         >
-            <div className="w-full h-[calc(100vh-191px)] overflow-auto thin-scroll">
-                <div className="px-4">
+            <div className="w-full h-[calc(100vh-191px)] overflow-auto thin-scroll px-8 sm:px-4  xs:px-2 ">
+                <div className="px-4 xs:flex xs:justify-center sm:mt-10 sm:flex sm:flex-col">
                     <div>
                         <label className="font-regular mb-1 text-lg">
                             Set your base price
@@ -58,8 +58,8 @@ const Price: React.FC<TabProps> = ({ nextStep, prevStep }): JSX.Element => {
                         </p>
                     </div>
                     <Divider sx={{ borderColor: '#817E7E' }} />
-                    <div className="flex my-8">
-                        <div className="w-1/2 flex flex-col mr-8">
+                    <div className="flex my-8  sm:flex-col ">
+                        <div className="w-1/2 flex flex-col mr-8 sm:mr-0 sm:w-full sm:mx-auto sm:mt-4">
                             <p className="min-h-[56px] font-regular text-center text-lg ">
                                 Weekend price <br /> increase/decrease
                             </p>
@@ -98,7 +98,7 @@ const Price: React.FC<TabProps> = ({ nextStep, prevStep }): JSX.Element => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-1/2 flex flex-col ml-8">
+                        <div className="w-1/2 flex flex-col ml-8 sm:ml-0 sm:w-full sm:mx-auto sm:mt-8">
                             <p className="min-h-[56px] font-regular text-center text-lg ">
                                 Day price <br /> increase/decrease
                             </p>
@@ -142,18 +142,18 @@ const Price: React.FC<TabProps> = ({ nextStep, prevStep }): JSX.Element => {
                     <h5 className="text-center font-regular mt-4">
                         Specific Date
                     </h5>
-                    <div className="text-center my-4">
+                    <div className="text-center my-4 sm:p-0">
                         <DateRangePicker
                             moveRangeOnFirstSelection={false}
                             onChange={(item) => setDate([item.selection])}
-                            months={2}
+                            months={window.screen.width < 1285 ? 1 : 2}
                             direction="horizontal"
                             ranges={date}
                             showMonthAndYearPickers={true}
                             showDateDisplay={false}
                             showPreview={true}
                             editableDateInputs={true}
-                            className="price-date-range"
+                            className="price-date-range  sm:mx-auto sm:p-0 "
                             weekdayDisplayFormat="E"
                         />
                     </div>
