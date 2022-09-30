@@ -21,17 +21,18 @@ const Img = styled('img')({
 const Venues: FC = (): JSX.Element => {
     return (
         <div
-            className="pl-28 py-12 md:pl-20 sm:pl-16 xs:pl-4 xs:pr-4 md:py-14 xs:py-8"
+            className="pl-28 py-12 md:pl-16 md:py-14 sm:pl-8 xs:pl-4 xs:pr-4  xs:py-8"
             id="venues"
         >
             <h1 className="font-regular text-black text-3xl xs:text-2xl">
                 Explore Venues Nearby
             </h1>
-            <section className="my-10 pr-28 xs:my-8 xs:pr-0">
+            <section className="my-10 pr-28 md:pr-16 sm:pr-8 xs:my-8 xs:pr-0">
                 <Grid
                     container
-                    rowSpacing={{ xs: 3, sm: 6 }}
-                    columnSpacing={{ xs: 1, sm: 2, md: 3, lg: 4 }}
+                    // rowSpacing={{ xs: 3, sm: 6 }}
+                    // columnSpacing={{ xs: 1, sm: 2, md: 2, lg: 4 }}
+                    spacing={{ xs: 1, sm: 1, md: 2, lg: 4 }}
                 >
                     {cities.map((city: CityType, index: React.Key | null) => (
                         <CityCard
@@ -43,7 +44,7 @@ const Venues: FC = (): JSX.Element => {
                     ))}
                 </Grid>
             </section>
-            <section className="pr-28 md:pr-12 sm:pr-6 xs:pr-2">
+            <section className="pr-28 md:pr-16 sm:pr-8 xs:pr-2">
                 <figure className="relative w-full h-[320px] bg-[#e2e2e2] rounded-3xl overflow-auto sm:h-[200px]">
                     <div className="absolute top-0 w-full h-full">
                         <div className="w-1/2 h-full bg-gradient-to-b from-[rgba(0,0,0,0.41)] float-right px-4 pb-4 sm:w-full sm:bg-gradient-to-t sm:from-[rgba(256,256,256,0.20)]">

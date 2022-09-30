@@ -9,7 +9,7 @@ export interface PagesProps {
 
 const Pages: React.FC<PagesProps> = ({ page }): JSX.Element => {
     return (
-        <div className="bg-white w-[90%] shadow-lg h-[525px] m-4 flex flex-col justify-between overflow-hidden">
+        <div className="bg-white w-[90%] shadow-lg h-[405px] m-4 flex flex-col justify-between ">
             <div className="h-[calc(100%-80px) overflow-auto thin-scroll">
                 <div
                     className="p-8 flex flex-wrap"

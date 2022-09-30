@@ -66,7 +66,7 @@
         max-width: 600px;
     }
     .scrolled {
-        transform: translate(-50%, -250%) scale(0.9);
+        transform: translate(-50%, -242%) scale(0.7);
     }
 }
 

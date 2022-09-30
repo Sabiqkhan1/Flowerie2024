@@ -207,8 +207,8 @@ const Transaction: React.FC = (): JSX.Element => {
             <div className="w-full h-72 border border-commonLight rounded-2xl p-4">
                 <Bar options={options} data={data} />
             </div>
-            <div className="w-full flex flex-wrap my-4 sm:flex-col">
-                <div className="w-1/2 pr-4 sm:w-full sm:p-0">
+            <div className="w-full flex flex-wrap my-4 md:flex-col">
+                <div className="w-1/2 pr-4 md:w-full md:p-0">
                     <div className="w-full p-4 border border-commonLight rounded-2xl">
                         <h3 className="font-bold">Success rate</h3>
                         <div className="w-56 h-56 mx-auto">
@@ -254,7 +254,7 @@ const Transaction: React.FC = (): JSX.Element => {
                         </div>
                     </div>
                 </div>
-                <div className="w-1/2 pl-4 sm:w-full sm:p-0">
+                <div className="w-1/2 pl-4 md:w-full md:p-0">
                     <div className="w-full p-4 border border-commonLight rounded-2xl">
                         <h3 className="font-bold">Payment issues</h3>
                         <div className="w-full flex my-4 pt-2">

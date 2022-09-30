@@ -54,7 +54,7 @@ const MoodBoard = () => {
                 <div className="bg-[#E3E3E3] h-[calc(100vh-64px)] flex-grow p-1 overflow-hidden">
                     <MoodBoardHeader />
                     <div>
-                        <div className="flex flex-col items-center py-4">
+                        <div className="flex flex-col items-center py-4 ">
                             {pages.map((page: PageTypes, index: React.Key) => (
                                 <Page key={index} page={page} />
                             ))}

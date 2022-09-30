@@ -10,7 +10,7 @@ interface CityCardProps {
 const CityCard: FC<CityCardProps> = ({ city, distance, img }): JSX.Element => {
     return (
         <Grid item xs={12} sm={6} md={4} lg={3}>
-            <div className="flex items-center cursor-pointer hover:scale-105 transition-transform duration-300 xs:flex-col hover:bg-dim hover:shadow-md rounded-2xl p-2">
+            <div className="flex items-center sm:justify-start md:justify-center cursor-pointer hover:scale-105 transition-transform duration-300 xs:flex-col hover:bg-dim hover:shadow-md rounded-2xl p-2 ">
                 <div className="w-city-w h-city-h overflow-hidden xs:w-city-mobile-w xs:h-city-mobile-h">
                     <img
                         src={img}

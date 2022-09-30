@@ -270,8 +270,8 @@ const Product = () => {
                                         color="#000"
                                         style={{ margin: '10px 0' }}
                                     />
-                                    <div className="my-8 pl-4 xs:pl-0">
-                                        <p className="font-medium text-[#615F5F] text-3xl sm:text-xl xs-text-sm">
+                                    <div className="my-8 pl-4 xs:pl-0 flex flex-col  items-center ">
+                                        <p className="w-full font-medium text-[#615F5F] text-3xl sm:text-xl xs-text-sm">
                                             Experiment with dates
                                         </p>
                                         <LocalizationProvider

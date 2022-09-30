@@ -6,7 +6,6 @@ import cover from '../../assets/images/post-home.jpg'
 const Img = styled('img')({
     display: 'block',
     width: '100%',
-    // height: window.screen.width < 600 ? '50vh' : '100vh',
     maxHeight: '100vh',
     objectFit: 'cover',
 })
@@ -15,10 +14,14 @@ const Welcome: React.FC = (): JSX.Element => {
     return (
         <div className="h-screen w-full">
             <Grid container sx={{ height: '100%' }}>
-                <Grid item lg={6} md={6} sm={6}>
-                    <Img src={cover} alt="cover" />
+                <Grid item lg={6} md={6} sm={6} xs={12}>
+                    <Img
+                        className="md:h-[100vh] sm:h-[calc(100vh-30vh)] sm:aspect-[280/200] xs:h-[calc(100vh-40vh)] xs:aspect-[280/220]"
+                        src={cover}
+                        alt="cover"
+                    />
                 </Grid>
-                <Grid item lg={6} md={6} sm={6}>
+                <Grid item lg={6} md={6} sm={6} xs={12}>
                     <div className="h-full bg-black p-4 flex flex-col">
                         <div className="text-right">
                             <Link to="/vendor-dashboard">
@@ -28,10 +31,10 @@ const Welcome: React.FC = (): JSX.Element => {
                             </Link>
                         </div>
                         <div className="flex-grow flex justify-center items-center flex-col">
-                            <p className="text-white font-semibold text-4xl text-center max-w-sm">
+                            <p className="text-white font-semibold text-4xl text-center max-w-sm sm:text-3xl">
                                 Become a Vendor in a few easy steps.
                             </p>
-                            <p className="text-white font-semibold text-lg text-center max-w-xs mt-6">
+                            <p className="text-white font-semibold text-lg text-center max-w-xs mt-6 sm:mt-3 sm:mb-3 sm:text-base ">
                                 Join the family. We'll guide you every step of
                                 the way.
                             </p>

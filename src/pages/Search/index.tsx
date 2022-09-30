@@ -75,11 +75,30 @@ const Search: React.FC = (): JSX.Element => {
             <LoginModal />
             <SignupModal />
             <div className="w-full mt-24 relative ">
-                <Grid container>
-                    <Grid item lg={8}>
-                        <div className="w-full h-[calc(100vh-96px)] overflow-auto thin-scroll p-8 sm:p-4 sm:w-6/12">
-                            <div className="bg-white">
-                                <div className="flex w-full">
+                <Grid
+                    container
+                    sx={{
+                        justifyContent: {
+                            sm: 'flex-start',
+                            xs: 'center',
+                        },
+                    }}
+                >
+                    <Grid
+                        item
+                        lg={8}
+                        md={9}
+                        sx={{
+                            margin: {
+                                xs: '20px auto',
+                                sm: '20px auto',
+                                md: '20px auto',
+                            },
+                        }}
+                    >
+                        <div className="w-full h-[calc(100vh-96px)] overflow-auto thin-scroll p-8 sm:p-4  ">
+                            <div className="bg-white xs:max-w-[280px] ">
+                                <div className="flex w-full xs:flex-col">
                                     <div id="container">
                                         <FilterButton
                                             id="tag"
@@ -87,7 +106,7 @@ const Search: React.FC = (): JSX.Element => {
                                             aria-describedby={id}
                                         >
                                             <div className="flex items-center">
-                                                Add Filters{' '}
+                                                Add Filters
                                                 <AddIcon
                                                     sx={{
                                                         fontSize: {
@@ -107,7 +126,7 @@ const Search: React.FC = (): JSX.Element => {
                                             handleChange={handleFilterSelect}
                                         />
                                     </div>
-                                    <div className="ml-6 flex flex-wrapno-scroll xs:flex-nowrap xs:overflow-auto ">
+                                    <div className="ml-6 flex flex-wrap no-scroll xs:flex-nowrap xs:overflow-auto xs:pt-2 xs:ml-0 ">
                                         {filterTags.map((tag, index) => (
                                             <FilterTag
                                                 key={index}
@@ -119,14 +138,14 @@ const Search: React.FC = (): JSX.Element => {
                                         ))}
                                     </div>
                                 </div>
-                                <div className="font-regular text-black text-xl my-2 xs:text-sm">
+                                <div className="font-regular text-black text-xl my-2 xs:text-xs">
                                     245+ results - 22nd Aug, 2022 for 400 +
                                     guests
                                 </div>
-                                <h1 className="font-extrabold text-black text-3xl xs:text-2xl">
+                                <h1 className="font-extrabold text-black text-3xl xs:text-xl  sm:mt-2">
                                     Venues in London
                                 </h1>
-                                <div>
+                                <div className="w-full  ">
                                     {searchData.map((search, index) => (
                                         <SearchCard key={index} tag={search} />
                                     ))}
@@ -161,8 +180,17 @@ const Search: React.FC = (): JSX.Element => {
                             </div>
                         </div>
                     </Grid>
-                    <Grid item lg={4}>
-                        <div className="w-full h-[calc(100vh-96px)]">
+                    <Grid
+                        item
+                        lg={4}
+                        md={3}
+                        sm={8}
+                        xs={10}
+                        sx={{
+                            margin: { xs: '20px auto', sm: '20px auto', md: 0 },
+                        }}
+                    >
+                        <div className="w-full h-[calc(100vh-96px)] xs:h-[calc(100vh-70vh)] ">
                             <Map
                                 initialViewState={{ ...viewport }}
                                 mapboxAccessToken={

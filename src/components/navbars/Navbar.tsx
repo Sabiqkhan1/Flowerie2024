@@ -55,7 +55,7 @@ const Navbar = (): JSX.Element => {
     const id = dropDownOpen ? 'nav-dropdown' : undefined
     return (
         <nav
-            className="fixed top-0 w-full z-50 px-20 py-6 transition-colors duration-500 ease-in-out md:px-14 sm:px-8 xs:px-4 xs:py-4"
+            className="fixed top-0 w-full z-50 px-20 py-6 transition-colors duration-500 ease-in-out md:px-8 sm:px-8 xs:px-4 xs:py-4"
             id="homeNav"
         >
             <div className="relative flex items-center justify-between">
@@ -85,7 +85,7 @@ const Navbar = (): JSX.Element => {
                     </span>
                 </div>
                 {!scrolled && (
-                    <div className="w-1/2 flex items-center justify-center sm:hidden ">
+                    <div className="w-1/2 flex items-center justify-center sm:hidden">
                         {navLinks.map(
                             (item: NavLinksType, index: React.Key) => (
                                 <NavLink
@@ -102,7 +102,7 @@ const Navbar = (): JSX.Element => {
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         transition={{ delay: 0.3 }}
-                        className="block font-medium text-xl white cursor-pointer mr-4 sm:hidden md:text-sm"
+                        className="block font-medium text-xl white cursor-pointer mr-4 md:text-sm md:mr-0 sm:hidden "
                     >
                         <Link to="host">Become a vendor</Link>
                     </motion.div>

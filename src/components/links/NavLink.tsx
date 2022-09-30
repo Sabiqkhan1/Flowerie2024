@@ -6,7 +6,7 @@ const NavLink = ({ href, label }: NavLinksProps): JSX.Element => {
     const location = useLocation()
     let match = location.hash === href
     return (
-        <div className="font-medium white md:text-sm text-xl flex flex-col items-center mx-8">
+        <div className="font-medium white md:text-sm text-xl flex flex-col items-center mx-8 md:mx-3">
             <a href={href}>
                 <motion.span
                     initial={{ opacity: 0 }}

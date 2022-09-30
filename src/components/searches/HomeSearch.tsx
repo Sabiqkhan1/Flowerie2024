@@ -36,7 +36,7 @@ const HomeSearch: React.FC<HomeSearchProps> = ({ scrolled }): JSX.Element => {
     }
 
     return (
-        <form className={scrolled ? 'search-form scrolled   ' : 'search-form'}>
+        <form className={scrolled ? 'search-form scrolled ' : 'search-form'}>
             <div
                 className={
                     scrolled
