@@ -14,7 +14,7 @@ const Help: React.FC = (): JSX.Element => {
                     Hey Anddy!
                 </span>
             </div>
-            <div className="my-4 flex">
+            {/* <div className="my-4 flex">
                 <a
                     href="https://www.facebook.com/"
                     target="_blank"
@@ -39,38 +39,67 @@ const Help: React.FC = (): JSX.Element => {
                 >
                     <FaTwitter />
                 </a>
-            </div>
-            <h2 className="font-playfair-regular text-4xl">Contact Us</h2>
-            <form className="max-w-[70%] my-4">
-                <small className="text-16 font-medium text-[#7A7A7A]">
-                    Please write message and a member of our team will respond
-                    within 48 hours{' '}
-                </small>
-                <TextField
-                    multiline
-                    rows={10}
-                    fullWidth
-                    sx={{
-                        mt: 2,
-                        mb: 4,
-                    }}
-                />
-                <Button
-                    variant="contained"
-                    sx={{
-                        bgcolor: 'black',
-                        borderRadius: '40px',
-                        px: 4,
-                        textTransform: 'none',
-                        fontFamily: 'medium',
-                        '&:hover': {
+            </div> */}
+            <div className="flex flex-col items-center my-4">
+                <h2 className="font-playfair-regular text-4xl">Contact Us</h2>
+                <div className="my-4 flex">
+                    <a
+                        href="https://www.facebook.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-4xl text-black "
+                    >
+                        <IoLogoFacebook />
+                    </a>
+                    <a
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-4xl text-black mx-8"
+                    >
+                        <BsInstagram />
+                    </a>
+                    <a
+                        href="https://twitter.com/home"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-4xl text-black "
+                    >
+                        <FaTwitter />
+                    </a>
+                </div>
+                <form className="max-w-[70%] sm:max-w-[95%] my-4 flex flex-col items-center">
+                    <small className="text-16 font-medium text-[#7A7A7A]">
+                        Please write message and a member of our team will
+                        respond within 48 hours{' '}
+                    </small>
+                    <TextField
+                        multiline
+                        rows={10}
+                        fullWidth
+                        sx={{
+                            mt: 2,
+                            mb: 4,
+                        }}
+                    />
+                    <Button
+                        variant="contained"
+                        sx={{
                             bgcolor: 'black',
-                        },
-                    }}
-                >
-                    Submit
-                </Button>
-            </form>
+                            borderRadius: '40px',
+                            px: 4,
+                            textTransform: 'none',
+                            fontFamily: 'medium',
+                            '&:hover': {
+                                bgcolor: 'black',
+                            },
+                            alignSelf: 'center',
+                        }}
+                    >
+                        Submit
+                    </Button>
+                </form>
+            </div>
         </div>
     )
 }

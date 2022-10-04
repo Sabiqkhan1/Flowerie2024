@@ -40,15 +40,15 @@ const SearchCard: React.FC<SearchTagProps> = ({ tag }): JSX.Element => {
                     lg: 2,
                     md: 0,
                     sm: 0,
-                    xs: 1,
+                    xs: 0,
                 },
             }}
             elevation={0}
         >
             <Grid
                 container
-                spacing={{ md: 2, sm: 2, xs: 0 }}
-                rowSpacing={{ md: 0, sm: 0, xs: 2 }}
+                // spacing={{ md: 2, sm: 2, xs: 0 }}
+                // rowSpacing={{ md: 0, sm: 0, xs: 2 }}
                 sx={{
                     justifyContent: {
                         sm: 'flex-start',
@@ -56,11 +56,12 @@ const SearchCard: React.FC<SearchTagProps> = ({ tag }): JSX.Element => {
                     },
                 }}
             >
-                <Grid item>
+                <Grid item sm={4} xs={12}>
                     <Box
                         sx={{
                             height: '176px',
                             aspectRatio: '226/176',
+                            width: '100%',
                         }}
                     >
                         <Carousel
@@ -91,16 +92,17 @@ const SearchCard: React.FC<SearchTagProps> = ({ tag }): JSX.Element => {
                     xs={12}
                     sm
                     container
-                    spacing={2}
                     sx={{
                         flexDirection: {
                             md: 'row',
                             sm: 'column',
                             xs: 'column',
                         },
+
+                        padding: 2,
                     }}
                 >
-                    <Grid item xs container direction="column" spacing={2}>
+                    <Grid item xs container direction="column">
                         <Grid item xs>
                             <Link to="/product">
                                 <h3 className="font-extrabold text-searchPlaceholder text-lg underline underline-offset-1 xs:text-sm">{`${tag.name} in ${tag.location}`}</h3>

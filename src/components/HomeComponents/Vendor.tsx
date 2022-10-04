@@ -11,7 +11,7 @@ const Vendor: React.FC = (): JSX.Element => {
             id="venues"
         >
             {/* <section className="px-28 sm:pl-16 sm:pr-6  xs:pl-8 xs:pr-3 "> */}
-            <section className="pr-28 md:pr-16 sm:pr-8 xs:pr-4  ">
+            <section className="pr-28 md:pr-16 sm:pr-8 xs:pr-0  ">
                 <figure className="relative w-full h-[320px] bg-[#e2e2e2] rounded-3xl overflow-auto sm:h-[200px]">
                     <div className="absolute top-0 w-full h-full pt-20 pb-8 px-8 flex flex-col justify-between sm:pt-8">
                         <section>

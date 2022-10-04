@@ -24,15 +24,15 @@ const PostFormCounter: React.FC<PostFormCounterProps> = ({
     toggleLimit,
 }): JSX.Element => {
     return (
-        <div className="sm:mt-20">
-            <label className="font-semibold text-[#858585] pl-2 pb-2">
+        <div className="space-y-1">
+            <label className="font-semibold text-[#858585] mb-1 pl-2 pb-2 xs:text-sm">
                 {label}
             </label>
             <input
                 type="number"
                 value={counter}
                 onChange={onChange}
-                className="w-full bg-[#FCFCFC] border-2 border-[#858585] rounded-2xl font-semibold text-4xl py-3 text-center focus-visible:outline-none disabled:border-[#cccccc] disabled:text-[rgba(0,0,0,0.5)]"
+                className="w-full bg-[#FCFCFC] border-2 border-[#858585] rounded-2xl font-semibold text-4xl py-3 text-center focus-visible:outline-none disabled:border-[#cccccc] disabled:text-[rgba(0,0,0,0.5)] sm:py-2 xs:py-1 xs:text-2xl "
                 disabled={!hasLimit}
             />
             <div className="text-right my-2">

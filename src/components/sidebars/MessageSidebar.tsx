@@ -87,7 +87,7 @@ const MessageSidebar: React.FC = (): JSX.Element => {
         setValue(newValue)
     }
     return (
-        <div className="w-[260px] h-messageSidebarHeight xs:h-messageSidebarMobileHeight bg-[#F9F9F9] rounded-tl-[64px] px-4 pt-6 overflow-hidden sm:hidden">
+        <div className="w-[260px] min-w-[180px] h-messageSidebarHeight xs:h-messageSidebarMobileHeight bg-[#F9F9F9] rounded-tl-[64px] px-4 pt-6 overflow-hidden sm:hidden md:pr-0">
             <Box sx={{ width: '100%', height: '100%' }}>
                 <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                     <StyledTabs

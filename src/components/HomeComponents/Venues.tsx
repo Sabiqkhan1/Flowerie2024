@@ -44,7 +44,7 @@ const Venues: FC = (): JSX.Element => {
                     ))}
                 </Grid>
             </section>
-            <section className="pr-28 md:pr-16 sm:pr-8 xs:pr-2">
+            <section className="pr-28 md:pr-16 sm:pr-8 xs:pr-0">
                 <figure className="relative w-full h-[320px] bg-[#e2e2e2] rounded-3xl overflow-auto sm:h-[200px]">
                     <div className="absolute top-0 w-full h-full">
                         <div className="w-1/2 h-full bg-gradient-to-b from-[rgba(0,0,0,0.41)] float-right px-4 pb-4 sm:w-full sm:bg-gradient-to-t sm:from-[rgba(256,256,256,0.20)]">

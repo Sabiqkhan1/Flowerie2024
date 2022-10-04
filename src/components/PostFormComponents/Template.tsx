@@ -29,7 +29,7 @@ const Template: React.FC<TemplateProps> = ({
     const [loading, setLoading] = useState<boolean>(true)
 
     return (
-        <div className="h-screen w-full sm:w-[100vw]">
+        <div className="h-screen w-full ">
             {loading && (
                 <div className="fixed z-50 w-screen h-screen flex justify-center items-center">
                     <ClipLoader loading={loading} size={50} color="#DF7E7E" />
@@ -43,7 +43,7 @@ const Template: React.FC<TemplateProps> = ({
                     justifyContent: 'center',
                 }}
             >
-                <Grid item lg={6} sm={10} xs={12}>
+                <Grid item lg={6} md={6} sm={6} xs={12}>
                     <div className="relative">
                         <div className="absolute w-full h-full flex flex-col items-center pt-12">
                             <p className="max-w-sm font-regular text-4xl text-center text-white">
@@ -56,11 +56,12 @@ const Template: React.FC<TemplateProps> = ({
                             src={cover}
                             alt="cover"
                             onLoad={() => setLoading(false)}
-                            className="sm:h-[70vh] sm:w-[100vw]"
+                            // className="sm:h-[70vh] sm:w-[100vw]"
+                            className="md:h-[100vh] sm:h-[calc(100vh-30vh)] sm:aspect-[280/200] xs:h-[calc(100vh-40vh)] xs:aspect-[280/220]"
                         />
                     </div>
                 </Grid>
-                <Grid item lg={6} sm={10} xs={11}>
+                <Grid item lg={6} md={6} sm={6} xs={12}>
                     <div className="h-full bg-white flex flex-col relative">
                         <div className="w-full text-right py-4 absolute top-0 z-50">
                             <PostFormButton>Help</PostFormButton>
@@ -70,7 +71,7 @@ const Template: React.FC<TemplateProps> = ({
                                 Save and exit
                             </PostFormButton>
                         </div>
-                        <div className="flex-grow flex justify-center items-center xs:mt-10">
+                        <div className="flex-grow flex justify-center items-center ">
                             {children}
                         </div>
                         <div className="flex items-center justify-between border-t border-[rgba(184,178,178,1)] p-4">

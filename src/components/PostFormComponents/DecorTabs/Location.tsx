@@ -37,7 +37,7 @@ const Location: React.FC<TabProps> = ({ nextStep }): JSX.Element => {
             cover={cover}
             description="Where are you located?"
         >
-            <div className="w-full h-full relative sm:mt-6 sm:h-[50vh]">
+            <div className="w-full h-full relative sm:h-[50vh]">
                 <Map
                     initialViewState={{ ...viewport }}
                     mapboxAccessToken={process.env.REACT_APP_MAP_TOKEN}

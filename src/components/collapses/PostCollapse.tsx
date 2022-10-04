@@ -23,7 +23,7 @@ const PostCollapse = () => {
                 my: 2,
             }}
         >
-            <div className="absolute bottom-0 left-1/2">
+            <div className="absolute bottom-0 left-1/2 xs:left-[45%]">
                 <IconButton size="small" onClick={handleChange}>
                     <KeyboardArrowDownIcon
                         sx={{
@@ -35,16 +35,18 @@ const PostCollapse = () => {
                     />
                 </IconButton>
             </div>
-            <div className="flex rounded-xl">
+            <div className="flex rounded-xl xs:flex-col xs:items-center">
                 <section
                     className={`${
-                        expand ? 'px-4' : 'p-0'
-                    } transition-all duration-500`}
+                        expand ? 'px-4 md:px-2 xs:px-0' : 'p-0 xs:w-full'
+                    } transition-all duration-500 `}
                 >
                     <figure
                         className={`w-56 h-40 ${
-                            expand ? 'my-4' : 'my-0'
-                        } rounded-xl  overflow-hidden transition-all duration-500`}
+                            expand ? 'my-4' : 'my-0 xs:w-full'
+                        } rounded-xl  overflow-hidden transition-all duration-500
+                       
+                        `}
                     >
                         <PrimaryImage src={WeddingCover} />
                     </figure>
@@ -66,10 +68,10 @@ const PostCollapse = () => {
                         <AddIcon sx={{ fontSize: 48 }} />
                     </button>
                 </section>
-                <section className="flex-grow flex flex-col px-4 pb-4">
+                <section className="flex-grow flex flex-col px-4 pb-4 md:px-2 ">
                     <div className="flex-grow">
-                        <div className="flex justify-between items-center my-2">
-                            <p className="font-medium text-lg text-[#786F6F]">
+                        <div className="flex justify-between items-center my-2 md:flex-col  ">
+                            <p className="font-medium text-lg text-[#786F6F] md:my-1">
                                 Dorset Wedding Venue
                             </p>
                             {expand && (
@@ -78,8 +80,8 @@ const PostCollapse = () => {
                                 </button>
                             )}
                         </div>
-                        <div className="flex justify-between items-center my-2">
-                            <p className="font-medium text-lg text-[#1C1C1C]">
+                        <div className="flex justify-between items-center my-2 md:flex-col   ">
+                            <p className="font-medium text-lg text-[#1C1C1C] md:my-1">
                                 {`{{ Description }}`}
                             </p>
                             {expand && (
@@ -89,8 +91,8 @@ const PostCollapse = () => {
                             )}
                         </div>
                         {expand && (
-                            <div className="flex justify-between items-center my-2">
-                                <p className="font-medium text-lg text-[#42B06E]">
+                            <div className="flex justify-between items-center my-2 md:flex-col  ">
+                                <p className="font-medium text-lg text-[#42B06E] md:my-1">
                                     {`{{ Price }}`}
                                 </p>
                                 {expand && (
@@ -101,7 +103,7 @@ const PostCollapse = () => {
                             </div>
                         )}
                         {expand && (
-                            <div className="flex justify-between items-center my-2">
+                            <div className="flex justify-between items-center my-2 md:flex-col  ">
                                 <p className="font-medium text-lg text-[#1C1C1C]">
                                     {`{{ Amenities }}`}
                                 </p>
@@ -114,7 +116,7 @@ const PostCollapse = () => {
                         )}
                         {!expand && (
                             <div className="my-2">
-                                <p className="font-medium text-lg text-[#1C1C1C]">
+                                <p className="font-medium text-lg text-[#1C1C1C] md:text-right">
                                     {`{{ Post ID }}`}
                                 </p>
                             </div>
@@ -128,8 +130,8 @@ const PostCollapse = () => {
                         )}
                     </div>
 
-                    <div className="flex justify-between items-center my-2">
-                        <p className="font-medium text-lg text-[#1C1C1C]">
+                    <div className="flex justify-between items-center my-2 md:flex-col  ">
+                        <p className="font-medium text-lg text-[#1C1C1C] md:my-1">
                             {`{{ Post ID }}`}
                         </p>
                         <div className="flex">

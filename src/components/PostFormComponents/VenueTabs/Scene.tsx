@@ -34,7 +34,7 @@ const Scene: React.FC<TabProps> = ({ nextStep, prevStep }): JSX.Element => {
             cover={cover}
             description="Let’s set the scene!"
         >
-            <div className="w-full h-[calc(100vh-190px)] overflow-auto thin-scroll sm:mt-8 ">
+            <div className="w-full h-[calc(100vh-190px)] overflow-auto thin-scroll sm:mt-10 ">
                 <div className="w-full px-4 h-full flex flex-col ">
                     <div>
                         <label className="font-regular mb-1">

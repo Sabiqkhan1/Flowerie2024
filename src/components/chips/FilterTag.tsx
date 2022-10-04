@@ -11,7 +11,7 @@ const FilterTag: React.FC<FilterTagProps> = ({
     handleDelete,
 }): JSX.Element => {
     return (
-        <button className="border border-gray rounded-full px-4 py-2 min-w-max bg-filterBackground font-regular text-textBlack text-xs hover:bg-[#dfdede] transition-colors duration-300 flex items-center mx-2 mb-2">
+        <button className="border border-gray rounded-full px-4 py-2 min-w-max bg-filterBackground font-regular text-textBlack text-xs hover:bg-[#dfdede] transition-colors duration-300 flex items-center mx-2 mb-2 xs:px-1 xs:py-1">
             {tag.label}
             <span className="ml-1">
                 <CloseIcon

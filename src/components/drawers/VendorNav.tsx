@@ -90,7 +90,9 @@ const VendorNav: React.FC<VendorNavProps> = ({
                                 <ListItemButton
                                     sx={{ pl: '34px' }}
                                     key={index}
-                                    onClick={() => navigate(item.to)}
+                                    onClick={() => {
+                                        navigate(item.to)
+                                    }}
                                 >
                                     <ListItemIcon sx={{ minWidth: 30 }}>
                                         {item.icon}

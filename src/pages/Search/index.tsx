@@ -88,16 +88,18 @@ const Search: React.FC = (): JSX.Element => {
                         item
                         lg={8}
                         md={9}
+                        xs={12}
                         sx={{
                             margin: {
                                 xs: '20px auto',
                                 sm: '20px auto',
                                 md: '20px auto',
                             },
+                            width: '100%',
                         }}
                     >
                         <div className="w-full h-[calc(100vh-96px)] overflow-auto thin-scroll p-8 sm:p-4  ">
-                            <div className="bg-white xs:max-w-[280px] ">
+                            <div className="bg-white  ">
                                 <div className="flex w-full xs:flex-col">
                                     <div id="container">
                                         <FilterButton

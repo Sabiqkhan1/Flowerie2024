@@ -41,7 +41,7 @@ const HomeSearch: React.FC<HomeSearchProps> = ({ scrolled }): JSX.Element => {
                 className={
                     scrolled
                         ? 'input-wrapper  '
-                        : 'input-wrapper  -mt-12  xs:-mt-10 sm:-mt-24'
+                        : 'input-wrapper  -mt-12  xs:-mt-10 sm:-mt-24 md:-mt-24'
                 }
             >
                 <input

@@ -85,7 +85,7 @@ const Navbar = (): JSX.Element => {
                     </span>
                 </div>
                 {!scrolled && (
-                    <div className="w-1/2 flex items-center justify-center sm:hidden">
+                    <div className="w-1/2 flex items-center justify-center sm:hidden md:w-1/4 sm:w-1/2 md:justify-evenly">
                         {navLinks.map(
                             (item: NavLinksType, index: React.Key) => (
                                 <NavLink
@@ -97,12 +97,12 @@ const Navbar = (): JSX.Element => {
                         )}
                     </div>
                 )}
-                <div className="w-1/4 flex items-center justify-end">
+                <div className="w-1/4 flex items-center justify-end md:justify-start sm:justify-end">
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         transition={{ delay: 0.3 }}
-                        className="block font-medium text-xl white cursor-pointer mr-4 md:text-sm md:mr-0 sm:hidden "
+                        className="block font-medium text-xl white cursor-pointer mr-4 md:text-sm md:mr-0 sm:hidden w-full "
                     >
                         <Link to="host">Become a vendor</Link>
                     </motion.div>

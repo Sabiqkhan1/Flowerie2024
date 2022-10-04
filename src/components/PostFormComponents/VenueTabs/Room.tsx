@@ -65,7 +65,7 @@ const Room: React.FC<TabProps> = ({ nextStep }): JSX.Element => {
             description="How many rooms does your venue offer?"
         >
             <div className="w-full h-full flex flex-col">
-                <div className="w-3/5 flex-grow flex items-center justify-center mx-auto ">
+                <div className="w-3/5 flex-grow flex items-center justify-center mx-auto sm:mt-10">
                     <PostFormCounter
                         counter={rooms}
                         onChange={handleRoomChange}

@@ -12,7 +12,7 @@ const Img = styled('img')({
 })
 const Hero = (): JSX.Element => {
     return (
-        <header className="relative w-full h-[calc(100vh-110px)] md:h-[calc(100vh-220px)] sm:h-[calc(100vh-200px)] xs:h-[calc(100vh-40vh)]">
+        <header className="relative w-full h-[calc(100vh-110px)] md:h-[calc(100vh-180px)] sm:h-[calc(100vh-200px)] xs:h-[calc(100vh-40vh)]">
             <div className="absolute top-0 w-full h-full flex flex-col justify-end py-16 px-28 bg-gradient-to-b from-[#c2c2c26e] to-[#000000a1] xs:px-4 sm:px-8 md:px-14 sm:py-4">
                 <section className="flex flex-col ">
                     <motion.h1

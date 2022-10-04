@@ -36,108 +36,116 @@ const Price: React.FC<TabProps> = ({ nextStep, prevStep }): JSX.Element => {
             cover={cover}
             description="Now for the fun part, let’s price your service!"
         >
-            <div className="w-full h-[calc(100vh-191px)] overflow-auto thin-scroll px-8 sm:px-4  xs:px-2 ">
-                <div className="px-4 xs:flex xs:justify-center sm:mt-10 sm:flex sm:flex-col">
-                    <div>
-                        <label className="font-regular mb-1 text-lg">
-                            Set your base price
-                        </label>
-                        <input
-                            type="text"
-                            name="name"
-                            className="bg-[#FBFBFB] w-full px-4 py-2 border border-[rgba(0,0,0,0.6)] rounded-md focus-visible:outline-none font-regular text-sm"
-                        />
-                    </div>
-                    <div className="my-4">
-                        <h4 className="font-regular text-lg">
-                            You can set different prices depending on the day.
-                        </h4>
-                        <p className="font-regular text-xs text-[#948d8d]">
-                            We recommend to have a good pricing stratergy by not
-                            diviating too highly form the base price
-                        </p>
-                    </div>
-                    <Divider sx={{ borderColor: '#817E7E' }} />
-                    <div className="flex my-8  sm:flex-col ">
-                        <div className="w-1/2 flex flex-col mr-8 sm:mr-0 sm:w-full sm:mx-auto sm:mt-4">
-                            <p className="min-h-[56px] font-regular text-center text-lg ">
-                                Weekend price <br /> increase/decrease
+            <div className="w-full h-[calc(100vh-191px)] overflow-auto thin-scroll px-8 sm:px-4  xs:px-0 ">
+                <div className="px-4 xs:flex xs:justify-center sm:mt-10 sm:flex sm:flex-col sm:px-2">
+                    <div className="sm:px-2">
+                        <div>
+                            <label className="font-regular mb-1 text-lg">
+                                Set your base price
+                            </label>
+                            <input
+                                type="text"
+                                name="name"
+                                className="bg-[#FBFBFB] w-full px-4 py-2 border border-[rgba(0,0,0,0.6)] rounded-md focus-visible:outline-none font-regular text-sm"
+                            />
+                        </div>
+                        <div className="my-4">
+                            <h4 className="font-regular text-lg">
+                                You can set different prices depending on the
+                                day.
+                            </h4>
+                            <p className="font-regular text-xs text-[#948d8d]">
+                                We recommend to have a good pricing stratergy by
+                                not diviating too highly form the base price
                             </p>
-                            <div className="flex mt-4">
-                                <div className="w-1/2 flex flex-col mr-2">
-                                    <label className="font-regular text-sm">
-                                        Saturday
-                                    </label>
-                                    <div className="w-full flex border border-[rgba(0,0,0,0.6)] rounded-sm">
-                                        <input className="w-full p-2 rounded-sm focus-visible:outline-none text-center" />
-                                        <button className="flex justify-center items-center border-l border-l-[rgba(0,0,0,0.6)] p-2">
-                                            <ArrowUpwardIcon
-                                                sx={{
-                                                    transform: 'rotate(225deg)',
-                                                    color: '#ACACAD',
-                                                }}
-                                            />
-                                        </button>
+                        </div>
+                        <Divider sx={{ borderColor: '#817E7E' }} />
+                        <div className="flex my-8  sm:flex-col ">
+                            <div className="w-1/2 flex flex-col mr-8 sm:mr-0 sm:w-full sm:mx-auto sm:mt-4">
+                                <p className="min-h-[56px] font-regular text-center text-lg ">
+                                    Weekend price <br /> increase/decrease
+                                </p>
+                                <div className="flex mt-4">
+                                    <div className="w-1/2 flex flex-col mr-2">
+                                        <label className="font-regular text-sm">
+                                            Saturday
+                                        </label>
+                                        <div className="w-full flex border border-[rgba(0,0,0,0.6)] rounded-sm">
+                                            <input className="w-full p-2 rounded-sm focus-visible:outline-none text-center" />
+                                            <button className="flex justify-center items-center border-l border-l-[rgba(0,0,0,0.6)] p-2">
+                                                <ArrowUpwardIcon
+                                                    sx={{
+                                                        transform:
+                                                            'rotate(225deg)',
+                                                        color: '#ACACAD',
+                                                    }}
+                                                />
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div className="w-1/2 flex flex-col ml-1">
+                                        <label className="font-regular text-sm">
+                                            Sunday
+                                        </label>
+                                        <div className="w-full flex border border-[rgba(0,0,0,0.6)] rounded-sm">
+                                            <input className="w-full p-2 rounded-sm focus-visible:outline-none text-center" />
+                                            <button className="flex justify-center items-center border-l border-l-[rgba(0,0,0,0.6)] p-2">
+                                                <ArrowUpwardIcon
+                                                    sx={{
+                                                        transform:
+                                                            'rotate(45deg)',
+                                                        color: '#ACACAD',
+                                                    }}
+                                                />
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="w-1/2 flex flex-col ml-1">
-                                    <label className="font-regular text-sm">
-                                        Sunday
-                                    </label>
-                                    <div className="w-full flex border border-[rgba(0,0,0,0.6)] rounded-sm">
-                                        <input className="w-full p-2 rounded-sm focus-visible:outline-none text-center" />
-                                        <button className="flex justify-center items-center border-l border-l-[rgba(0,0,0,0.6)] p-2">
-                                            <ArrowUpwardIcon
-                                                sx={{
-                                                    transform: 'rotate(45deg)',
-                                                    color: '#ACACAD',
-                                                }}
-                                            />
-                                        </button>
+                            </div>
+                            <div className="w-1/2 flex flex-col ml-8 sm:ml-0 sm:w-full sm:mx-auto sm:mt-8">
+                                <p className="min-h-[56px] font-regular text-center text-lg ">
+                                    Day price <br /> increase/decrease
+                                </p>
+                                <div className="flex mt-4">
+                                    <div className="w-1/2 flex flex-col mr-2">
+                                        <label className="font-regular text-sm">
+                                            Day
+                                        </label>
+                                        <div className="w-full flex border border-[rgba(0,0,0,0.6)] rounded-sm">
+                                            <input className="w-full p-2 rounded-sm focus-visible:outline-none text-center" />
+                                            <button className="flex justify-center items-center border-l border-l-[rgba(0,0,0,0.6)] p-2">
+                                                <ArrowUpwardIcon
+                                                    sx={{
+                                                        transform:
+                                                            'rotate(225deg)',
+                                                        color: '#ACACAD',
+                                                    }}
+                                                />
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div className="w-1/2 flex flex-col ml-1">
+                                        <label className="font-regular text-sm">
+                                            Evening
+                                        </label>
+                                        <div className="w-full flex border border-[rgba(0,0,0,0.6)] rounded-sm">
+                                            <input className="w-full p-2 rounded-md focus-visible:outline-none text-center" />
+                                            <button className="flex justify-center items-center border-l border-l-[rgba(0,0,0,0.6)] p-2">
+                                                <ArrowUpwardIcon
+                                                    sx={{
+                                                        transform:
+                                                            'rotate(45deg)',
+                                                        color: '#ACACAD',
+                                                    }}
+                                                />
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="w-1/2 flex flex-col ml-8 sm:ml-0 sm:w-full sm:mx-auto sm:mt-8">
-                            <p className="min-h-[56px] font-regular text-center text-lg ">
-                                Day price <br /> increase/decrease
-                            </p>
-                            <div className="flex mt-4">
-                                <div className="w-1/2 flex flex-col mr-2">
-                                    <label className="font-regular text-sm">
-                                        Day
-                                    </label>
-                                    <div className="w-full flex border border-[rgba(0,0,0,0.6)] rounded-sm">
-                                        <input className="w-full p-2 rounded-sm focus-visible:outline-none text-center" />
-                                        <button className="flex justify-center items-center border-l border-l-[rgba(0,0,0,0.6)] p-2">
-                                            <ArrowUpwardIcon
-                                                sx={{
-                                                    transform: 'rotate(225deg)',
-                                                    color: '#ACACAD',
-                                                }}
-                                            />
-                                        </button>
-                                    </div>
-                                </div>
-                                <div className="w-1/2 flex flex-col ml-1">
-                                    <label className="font-regular text-sm">
-                                        Evening
-                                    </label>
-                                    <div className="w-full flex border border-[rgba(0,0,0,0.6)] rounded-sm">
-                                        <input className="w-full p-2 rounded-md focus-visible:outline-none text-center" />
-                                        <button className="flex justify-center items-center border-l border-l-[rgba(0,0,0,0.6)] p-2">
-                                            <ArrowUpwardIcon
-                                                sx={{
-                                                    transform: 'rotate(45deg)',
-                                                    color: '#ACACAD',
-                                                }}
-                                            />
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
+
                     <Divider sx={{ borderColor: '#817E7E' }} />
                     <h5 className="text-center font-regular mt-4">
                         Specific Date
@@ -157,7 +165,7 @@ const Price: React.FC<TabProps> = ({ nextStep, prevStep }): JSX.Element => {
                             weekdayDisplayFormat="E"
                         />
                     </div>
-                    <div className="text-center">
+                    <div className="text-center sm:mb-4">
                         <label className="font-regular text-sm mr-4">
                             Price
                         </label>

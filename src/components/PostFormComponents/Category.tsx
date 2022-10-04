@@ -32,7 +32,7 @@ const Category: React.FC = (): JSX.Element => {
                     visibility: loading ? 'hidden' : 'visible',
                 }}
             >
-                <Grid item lg={6}>
+                <Grid item lg={6} md={6} sm={6} xs={12}>
                     <div className="relative">
                         <div className="absolute w-full h-full flex flex-col items-center pt-12">
                             <p className="max-w-sm font-regular text-4xl text-center text-white">
@@ -46,13 +46,14 @@ const Category: React.FC = (): JSX.Element => {
                                 visibility: loading ? 'hidden' : 'visible',
                                 width: '100%',
                             }}
+                            className="md:h-[100vh] sm:h-[calc(100vh-30vh)] sm:aspect-[280/200] xs:h-[calc(100vh-40vh)] xs:aspect-[280/220]"
                             onLoad={imageLoaded}
                         />
                     </div>
                 </Grid>
-                <Grid item lg={6} sm={12} xs={12}>
+                <Grid item lg={6} md={6} sm={6} xs={12}>
                     <div className="h-full bg-white flex flex-col">
-                        <div className="text-right py-4 sm:text-center">
+                        <div className="text-right py-4 ">
                             <PostFormButton>Help</PostFormButton>
                             <PostFormButton
                                 onClick={() => navigate('/vendor-dashboard')}
@@ -61,7 +62,7 @@ const Category: React.FC = (): JSX.Element => {
                             </PostFormButton>
                         </div>
                         <div className="flex-grow flex justify-center items-center">
-                            <div className="w-3/5 h-[calc(100vh-160px)] overflow-auto no-scroll sm:w-4/5 sm:mx-auto">
+                            <div className="w-3/5 h-[calc(100vh-160px)] overflow-auto no-scroll md:w-4/5 sm:mx-auto">
                                 <div className="w-full h-full">
                                     {postCategories.map((category, index) => (
                                         <PostCategoryCard

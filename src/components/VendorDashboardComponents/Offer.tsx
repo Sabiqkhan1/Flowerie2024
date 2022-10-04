@@ -21,12 +21,12 @@ const Offer: React.FC = (): JSX.Element => {
                         mt: 1,
                     }}
                 />
-                <p className="font-roboto-regular my-2">{`{{Name of listing}}`}</p>
-                <p className="font-roboto-regular my-2">{`{{Price offered}}`}</p>
-                <p className="font-roboto-regular my-2">{`{{Message from customer}}`}</p>
-                <div className="mt-12 flex justify-end">
+                <p className="font-roboto-regular my-2 xs:text-center">{`{{Name of listing}}`}</p>
+                <p className="font-roboto-regular my-2 xs:text-center">{`{{Price offered}}`}</p>
+                <p className="font-roboto-regular my-2 xs:text-center">{`{{Message from customer}}`}</p>
+                <div className="mt-12 flex   justify-around md:justify-between gap-1 xs:flex-col xs:items-center">
                     <FlatButton background="green">Accept offer</FlatButton>
-                    <FlatButton background="maroon" sx={{ mx: 2 }}>
+                    <FlatButton background="maroon" sx={{}}>
                         Send counter offer
                     </FlatButton>
                     <FlatButton background="maroon">Decline</FlatButton>

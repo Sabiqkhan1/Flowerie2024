@@ -25,7 +25,7 @@ const OrderCollapse = () => {
                 my: 2,
             }}
         >
-            <div className="absolute bottom-0 left-1/2">
+            <div className="absolute bottom-0 left-1/2 xs:left-[45%]">
                 <IconButton size="small" onClick={handleChange}>
                     <KeyboardArrowDownIcon
                         sx={{
@@ -37,16 +37,17 @@ const OrderCollapse = () => {
                     />
                 </IconButton>
             </div>
-            <div className="flex rounded-xl">
+            <div className="flex rounded-xl xs:flex-col xs:items-center">
                 <section
                     className={`${
-                        expand ? 'px-4' : 'p-0'
+                        expand ? 'px-4md:px-2 xs:px-0' : 'p-0 xs:w-full'
                     } transition-all duration-500`}
                 >
                     <figure
                         className={`w-56 h-40 ${
-                            expand ? 'my-4' : 'my-0'
-                        } rounded-xl  overflow-hidden transition-all duration-500`}
+                            expand ? 'my-4' : 'my-0 xs:w-full'
+                        } rounded-xl  overflow-hidden transition-all duration-500
+                        `}
                     >
                         <PrimaryImage src={WeddingCover} />
                     </figure>
@@ -68,44 +69,44 @@ const OrderCollapse = () => {
                         <AddIcon sx={{ fontSize: 48 }} />
                     </button>
                 </section>
-                <section className="flex-grow flex flex-col px-4 pb-4">
+                <section className="flex-grow flex flex-col px-4 pb-4 md:px-2 ">
                     <div className="flex-grow">
-                        <div className="my-2">
-                            <p className="font-medium text-lg text-[#786F6F]">
+                        <div className="flex justify-between items-center my-2  md:flex-col   ">
+                            <p className="font-medium text-lg text-[#1C1C1C] md:my-1">
                                 Dorset Wedding Venue
                             </p>
                         </div>
                         {expand && (
-                            <div className=" my-2">
-                                <p className="font-light text-lg text-[#1C1C1C]">
+                            <div className="flex justify-between items-center  my-2 md:flex-col   ">
+                                <p className="font-medium text-lg text-[#1C1C1C] md:my-1">
                                     {`{{ Description }}`}
                                 </p>
                             </div>
                         )}
                         {!expand && (
                             <div className=" my-2">
-                                <p className="font-light text-lg text-[#1C1C1C]">
+                                <p className="font-light text-lg text-[#1C1C1C] md:text-center">
                                     {`{{ Date }}`}
                                 </p>
                             </div>
                         )}
                         {!expand && (
                             <div className=" my-2">
-                                <p className="font-light text-lg text-[#1C1C1C]">
+                                <p className="font-light text-lg text-[#1C1C1C] md:text-center">
                                     {`{{ Customer Name }}`}
                                 </p>
                             </div>
                         )}
                         {expand && (
                             <div className="my-2">
-                                <p className="font-light text-lg text-[#42B06E]">
+                                <p className="font-light text-lg text-[#42B06E] md:text-center">
                                     {`{{ Price }}`}
                                 </p>
                             </div>
                         )}
                         {expand && (
                             <div className=" my-2">
-                                <p className="font-light text-lg text-[#1C1C1C]">
+                                <p className="font-light text-lg text-[#1C1C1C] md:text-center">
                                     {`{{ Amenities }}`}
                                 </p>
                             </div>
@@ -125,29 +126,29 @@ const OrderCollapse = () => {
                         <Divider sx={{ my: 4, borderColor: 'black' }} />
 
                         <div className=" my-2">
-                            <p className="font-light text-lg text-[#1C1C1C]">
+                            <p className="font-light text-lg text-[#1C1C1C] md:text-center">
                                 {`{{ Date }}`}
                             </p>
                         </div>
                         <div className=" my-2">
-                            <p className="font-light text-lg text-[#1C1C1C]">
+                            <p className="font-light text-lg text-[#1C1C1C] md:text-center">
                                 {`{{ Customer Name }}`}
                             </p>
                         </div>
                         <div className=" my-2">
-                            <p className="font-light text-lg text-[#1C1C1C]">
+                            <p className="font-light text-lg text-[#1C1C1C] md:text-center">
                                 {`{{ Customer Phone }}`}
                             </p>
                         </div>
                         <div className="my-2">
-                            <p className="font-light text-lg text-[#1C1C1C]">
+                            <p className="font-light text-lg text-[#1C1C1C] md:text-center">
                                 {`{{ Deposit Paid: `}{' '}
                                 <span className="text-[#42B06E]">Yes</span>{' '}
                                 {`}}`}
                             </p>
                         </div>
                         <div className="my-2">
-                            <p className="font-light text-lg text-[#1C1C1C]">
+                            <p className="font-light text-lg text-[#1C1C1C] md:text-center">
                                 {`{{ Full Amount: `}{' '}
                                 <span className="text-[#B04242]">No</span>{' '}
                                 {`}}`}
@@ -155,8 +156,8 @@ const OrderCollapse = () => {
                         </div>
                     </div>
 
-                    <div className="flex justify-between items-center my-2">
-                        <p className="font-medium text-lg text-[#1C1C1C]">
+                    <div className="flex justify-between items-center my-2 md:flex-col">
+                        <p className="font-medium text-lg text-[#1C1C1C] md:my-1">
                             {`{{ Order ID }}`}
                         </p>
 

@@ -65,7 +65,7 @@ const Quantity: React.FC<TabProps> = ({ nextStep }): JSX.Element => {
             description="What is the minimum and maximum you cater for?"
         >
             <div className="w-full h-[calc(100vh-200px)] overflow-auto no-scroll flex flex-col">
-                <div className="w-3/5 flex-grow flex-col flex items-center justify-center mx-auto">
+                <div className="w-3/5 flex-grow flex-col flex items-center justify-center mx-auto sm:mt-10 xs:mt-12">
                     <PostFormCounter
                         counter={quantity.min}
                         onChange={(e) => handleQuantity(e, 'min')}

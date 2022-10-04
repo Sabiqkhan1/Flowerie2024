@@ -34,7 +34,7 @@ const Cuisine: React.FC<TabProps> = ({ nextStep, prevStep }): JSX.Element => {
             description="What cuisine describes your food best?"
         >
             <div className="w-full h-[calc(100vh-190px)] overflow-auto thin-scroll">
-                <div className="px-8 text-center">
+                <div className="px-8 text-center sm:mt-12">
                     <h3 className="font-semibold text-[#858585] my-4 text-lg">
                         Pick cuisine
                     </h3>

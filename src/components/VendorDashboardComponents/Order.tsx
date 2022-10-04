@@ -10,7 +10,7 @@ const Order: React.FC = (): JSX.Element => {
     const [date, setDate] = React.useState<Date | null>(new Date())
 
     return (
-        <div className="flex pr-4">
+        <div className="flex pr-4 md:pr-0 md:flex-col">
             <div className="flex-grow">
                 <div className="flex items-center">
                     <MdWavingHand className="rotate-[270deg] text-[#FBD527] text-2xl" />
@@ -23,7 +23,7 @@ const Order: React.FC = (): JSX.Element => {
                     <OrderCollapse />
                 </div>
             </div>
-            <div className="w-72 pt-8">
+            <div className="w-72 pt-8 md:self-center sm:self-start">
                 <LocalizationProvider dateAdapter={AdapterDateFns}>
                     <CalendarPicker
                         className="calendar-picker"

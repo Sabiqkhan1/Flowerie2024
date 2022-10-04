@@ -95,14 +95,17 @@ const DashboardNavbar: React.FC = (): JSX.Element => {
                 open={mobileMenuOpen}
             />
             <div className="flex items-center justify-between px-4 py-3 xs:py-4">
-                <div className="w-full flex items-center">
-                    <span className="hidden sm:block">
+                <div className="w-full flex items-center justify-between">
+                    <span className="hidden md:block">
                         <MenuIcon
-                            sx={{ fontSize: 30, cursor: 'pointer' }}
+                            sx={{
+                                fontSize: 30,
+                                cursor: 'pointer',
+                            }}
                             onClick={toggle}
                         />
                     </span>
-                    <div className="flex-grow max-w-[300px] min-w-[150px] xs:hidden">
+                    <div className="flex-grow max-w-[500px] min-w-[150px] xs:hidden">
                         <VendorSearchInput />
                     </div>
                 </div>

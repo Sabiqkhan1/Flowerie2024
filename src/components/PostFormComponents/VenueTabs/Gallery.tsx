@@ -15,6 +15,7 @@ import { GalleryImageType } from '../../../assets/data/interfaces'
 import { RootState } from '../../../redux/store'
 import { setForm } from '../../../redux/venueForm/venueFormSlice'
 import { GalleryKeyType } from '../../../assets/data/types'
+import AnnouncementIcon from '@mui/icons-material/Announcement'
 const Img = styled('img')({
     display: 'block',
     width: '100%',
@@ -129,39 +130,61 @@ const Gallery: React.FC<TabProps> = ({ nextStep, prevStep }): JSX.Element => {
         >
             <ImageModal image={file!} handleSaveCaption={handleSaveCaption} />
             <div className="w-full h-[calc(100vh-190px)] overflow-auto thin-scroll">
-                <div className="w-full h-full flex items-center justify-center px-4 flex-col sm:px-2 xs:px-1">
+                <div className="w-full h-full flex items-center justify-center px-4 flex-col sm:px-2 xs:px-1 sm:mt-12">
                     {files.length < 2 ? (
-                        <div
-                            {...getRootProps()}
-                            className="w-4/5 h-4/5 rounded-2xl border border-black border-dashed flex flex-col justify-between items-center py-8 sm:mt-8 sm:mb-5 xs:p-2  sm:justify-evenly"
-                        >
-                            <div className="flex flex-col items-center ">
-                                <PhotoOutlinedIcon
+                        <>
+                            <div className=" py-4 sm:px-10 relative">
+                                <AnnouncementIcon
                                     sx={{
-                                        fontSize: 96,
-                                        color: '#434343',
+                                        fontSize: 16,
+                                        color: '#F9D978',
+                                        position: 'absolute',
+                                        right: {
+                                            lg: 0,
+                                            md: 0,
+                                            sm: 12,
+                                            xs: 16,
+                                        },
+                                        top: 8,
                                     }}
                                 />
-                                <p className="font-medium text-lg">
-                                    Drag your photos here
-                                </p>
-                                <p className="font-light text-lg">
-                                    Add atleast 5 photos
+                                <p className="font-semibold text-xs text-[#666565] xs:odd:font-regular">
+                                    Please dont forget to upload an electronic
+                                    version of your menu
                                 </p>
                             </div>
-                            <input
-                                type="file"
-                                id="image-upload"
-                                hidden
-                                {...getInputProps()}
-                            />
-                            <label
-                                htmlFor="image-upload"
-                                className="font-semibold text-lg underline underline-offset-1 cursor-pointer xs:text-sm"
+                            <div
+                                {...getRootProps()}
+                                className="w-4/5 h-4/5 rounded-2xl border border-black border-dashed flex flex-col justify-between items-center py-8 sm:mt-0 sm:mb-5 xs:p-2  sm:justify-evenly"
                             >
-                                Upload from your device
-                            </label>
-                        </div>
+                                <div className="flex flex-col items-center ">
+                                    <PhotoOutlinedIcon
+                                        sx={{
+                                            fontSize: 96,
+                                            color: '#434343',
+                                        }}
+                                    />
+                                    <p className="font-medium text-lg">
+                                        Drag your photos here
+                                    </p>
+                                    <p className="font-light text-lg">
+                                        Add atleast 5 photos
+                                    </p>
+                                </div>
+                                <input
+                                    type="file"
+                                    id="image-upload"
+                                    hidden
+                                    {...getInputProps()}
+                                />
+                                <label
+                                    htmlFor="image-upload"
+                                    className="font-semibold text-lg underline underline-offset-1 cursor-pointer xs:text-sm"
+                                >
+                                    Upload from your device
+                                </label>
+                            </div>
+                        </>
                     ) : (
                         <div className="w-4/5 h-full flex flex-wrap">
                             {files.map(

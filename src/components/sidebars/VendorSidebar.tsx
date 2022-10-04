@@ -45,7 +45,7 @@ const VendorSidebar = () => {
         }
     }
     return (
-        <div className="w-64 min-w-[256px] h-full overflow-y-auto thin-scroll bg-sidebarBackground text-center py-3 sm:hidden">
+        <div className="w-64 min-w-[256px] h-full overflow-y-auto thin-scroll bg-sidebarBackground text-center py-3 md:hidden">
             <VendorLogo />
             <List
                 sx={{ width: '100%', maxWidth: 256 }}
