@@ -16,10 +16,10 @@ const CheckList: React.FunctionComponent = (): JSX.Element => {
     return (
         <Box sx={{ py: 5, px: 6 }}>
             <Grid container spacing={1}>
-                <Grid item lg={3} xs={12} component="aside">
+                <Grid item md={3} sm={4} xs={12} component="aside">
                     <FilterPanelList />
                 </Grid>
-                <Grid item lg={9}>
+                <Grid item md={9} sm={8} xs={12}>
                     <section>
                         <p className="font-medium text-textBlack text-xs">
                             You have complete <strong>42</strong> out of{' '}

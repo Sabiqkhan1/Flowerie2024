@@ -6,7 +6,7 @@ import cover from '../../assets/images/host-vendor-cover.webp'
 
 const HostVendor: React.FC = (): JSX.Element => {
     return (
-        <section className="px-28 sm:px-4">
+        <section className="px-28 sm:px-5 ">
             <figure className=" relative w-full h-[320px] bg-[#e2e2e2] rounded-3xl overflow-auto sm:h-[200px] ">
                 {/* relative w-full h-[320px] bg-[#e2e2e2] rounded-3xl overflow-auto */}
                 <div className="absolute top-0 w-full h-full pt-8 pb-24 px-8 flex flex-col justify-between">

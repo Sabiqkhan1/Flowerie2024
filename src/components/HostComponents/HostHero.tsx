@@ -5,8 +5,8 @@ function HostHero(): JSX.Element {
     return (
         <header>
             <figure className="relative aspect-[1512/700] sm:h-[300px] sm:aspect-auto  ">
-                <div className="absolute top-0 w-full h-full p-20 flex flex-col justify-end  sm:p-6 ">
-                    <section className="w-[350px] aspect-[415/291] rounded-20 bg-gradient-to-b from-[#C78454] to-[rgba(241,101,0,0.53)] flex flex-col items-center justify-center sm:w-[250px] sm:mx-auto  ">
+                <div className="absolute top-0 w-full h-full p-20 flex flex-col justify-end md:p-10  sm:p-6 md:top-5 sm:top-0 ">
+                    <section className="w-[350px] aspect-[415/291] rounded-20 bg-gradient-to-b from-[#C78454] to-[rgba(241,101,0,0.53)] flex flex-col items-center justify-center   md:w-[300px] sm:mx-auto  sm:w-[250px] ">
                         <small className="font-regular text-white text-[1rem] sm:text-sm">
                             Join the Flowerie family
                         </small>

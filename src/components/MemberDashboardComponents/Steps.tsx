@@ -33,7 +33,7 @@ const Steps: React.FC = (): JSX.Element => {
                     {plannerLinks.map((link, index) => (
                         <CustomLink to={link.link} key={index}>
                             {link.icon}
-                            <h4 className="font-medium text-lg sm:font-regular sm:text-center sm:text-sm xs:text-[10px]  ">
+                            <h4 className="font-medium text-lg text-center sm:font-regular sm:text-center sm:text-sm xs:text-[10px]  ">
                                 {link.label}
                             </h4>
                         </CustomLink>

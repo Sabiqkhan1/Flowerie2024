@@ -4,13 +4,13 @@ import { hostItems } from '../../assets/data/static/hostItems'
 import ServiceCard from '../cards/ServiceCard'
 function SpecialServices(): JSX.Element {
     return (
-        <section className="font-regular text-center my-16">
+        <section className="font-regular text-center my-16 sm:px-5">
             <h2 className="font-semibold text-4xl sm:text-xl">
                 You can host your venue
                 <br /> or provide a speical service
             </h2>
             {/* <div className="flex justify-center"> */}
-            <Grid container className="px-[5rem]  content-center">
+            <Grid container className="xs:px-0    content-center">
                 {hostItems.map((item, index) => (
                     <ServiceCard
                         key={index}
@@ -35,12 +35,12 @@ function SpecialServices(): JSX.Element {
                     </div>
                 </div>
                 <div className="max-w-lg mx-auto">
-                    <h2 className="text-[#BDBBBB] text-4xl font-semibold sm:text-2xl">
+                    <h2 className="text-[#BDBBBB] text-4xl font-semibold sm:text-2xl xs:text-xl">
                         Host your <span className="text-[black]">venue</span>{' '}
                         while you{' '}
                         <span className="text-[black]">organise and earn</span>.
                     </h2>
-                    <h2 className="text-[#BDBBBB] mt-8 mb-4 text-4xl font-semibold sm:text-2xl">
+                    <h2 className="text-[#BDBBBB] mt-8 mb-4 text-4xl font-semibold sm:text-2xl xs:text-xl">
                         Provide your services with{' '}
                         <span className="text-[black]">safe payments</span>.
                     </h2>
