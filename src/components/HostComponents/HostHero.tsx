@@ -1,5 +1,5 @@
 import PrimaryImage from '../common/Img'
-import cover from '../../assets/images/host-cover.webp'
+import cover from '../../assets/images/host-hero1.webp'
 import ContainedButton from '../buttons/ContainedButton'
 function HostHero(): JSX.Element {
     return (

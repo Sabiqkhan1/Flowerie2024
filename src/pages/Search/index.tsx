@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from 'react'
 import Stack from '@mui/material/Stack'
 import Pagination from '@mui/material/Pagination'
@@ -19,6 +18,7 @@ import { FilterTagType } from '../../assets/data/types'
 import Map from 'react-map-gl'
 import AddIcon from '@mui/icons-material/Add'
 import MainFooter from '../../components/footers/MainFooter'
+
 const Search: React.FC = (): JSX.Element => {
     const matchesMobile = useMediaQuery('(max-width: 500px)')
     const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null)
@@ -195,11 +195,9 @@ const Search: React.FC = (): JSX.Element => {
                         <div className="w-full h-[calc(100vh-96px)] xs:h-[calc(100vh-70vh)] ">
                             <Map
                                 initialViewState={{ ...viewport }}
-                                mapboxAccessToken={
-                                    process.env.REACT_APP_MAP_TOKEN
-                                }
+                                mapboxAccessToken="pk.eyJ1Ijoic2s5NiIsImEiOiJja3hycGFuN3owazlhMm9vMG40ZXJ2cHV5In0.tk1vTYSNN8-JUtvvKzT-ow"
                                 style={{ width: '100%', height: '100%' }}
-                                mapStyle="mapbox://styles/hrkhan29/cl2z24gbn004b15mx4f8zxv3a"
+                                mapStyle="mapbox://styles/mapbox/streets-v11"
                                 attributionControl={false}
                             />
                         </div>

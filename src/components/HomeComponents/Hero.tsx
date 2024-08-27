@@ -17,7 +17,7 @@ const Hero = (): JSX.Element => {
                 <section className="flex flex-col ">
                     <motion.h1
                         initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
+                        whileInView={{ opacity: 5 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.3 }}
                         className="text-white font-semibold text-3xl mb-8 md:mb-4 md:text-2xl sm:text-xl "
