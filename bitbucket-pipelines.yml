@@ -1,0 +1,46 @@
+image: node:16.14.0
+
+pipelines:
+    branches:
+        master:
+            - step:
+                  caches:
+                      - node
+                  script:
+                      - npm install
+            - step:
+                  name: Build
+                  script:
+                      - npm install && npm run build
+                  artifacts:
+                      - build/**
+
+            - step:
+                  name: Deploy to Firebase
+                  deployment: Production
+                  script:
+                      - pipe: atlassian/firebase-deploy:2.0.0
+                        variables:
+                            KEY_FILE: $KEY_FILE
+
+    # default:
+    #     - step:
+    #           caches:
+    #               - node
+    #           script:
+    #               - npm install
+
+    #     - step:
+    #           name: Build
+    #           script:
+    #               - npm install && npm run build
+    #           artifacts:
+    #               - build/**
+
+    #     - step:
+    #           name: Deploy to Firebase
+    #           deployment: Production
+    #           script:
+    #               - pipe: atlassian/firebase-deploy:2.0.0
+    #                 variables:
+    #                     KEY_FILE: $KEY_FILE

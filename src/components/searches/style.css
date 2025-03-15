@@ -1,0 +1,22 @@
+@media screen and (max-width: 480px) {
+    .rdrCalendarWrapper {
+        width: 250px;
+    }
+    .rdrMonthAndYearWrapper {
+        width: 250px;
+    }
+    .rdrNextPrevButton {
+        width: 40px;
+        margin: 0;
+    }
+    .rdrDays {
+        width: 250px !important;
+    }
+
+    .rdrWeekDays {
+        width: 250px;
+    }
+    .rdrCalendarWrapper {
+        min-width: 300px;
+    }
+}

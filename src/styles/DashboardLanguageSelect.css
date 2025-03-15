@@ -1,0 +1,12 @@
+.dashboard-language-select .MuiOutlinedInput-notchedOutline {
+    border: none !important;
+}
+.dashboard-language-select .MuiSelect-select {
+    padding: 9.5px 14px !important;
+}
+
+/* 
+.dashboard-language-select
+    .MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+    padding-right: 32px !important;
+} */

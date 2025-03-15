@@ -1,0 +1,6 @@
+.language-select .MuiOutlinedInput-notchedOutline {
+    border: none !important;
+}
+.language-select .MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+    padding: 0 14px !important;
+}
